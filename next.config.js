@@ -1,5 +1,5 @@
 const options = {
-    reactStrictMode: true,
+  reactStrictMode: true
 };
 
-export default options;
+module.exports = options;

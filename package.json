@@ -23,7 +23,7 @@
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "format": "prettier -write .",
+    "format": "prettier --write .",
     "lint": "next lint"
   }
 }
