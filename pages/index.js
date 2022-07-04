@@ -1,4 +1,9 @@
-import {Box, Container, Heading, Image, useColorModeValue} from '@chakra-ui/react';
+import { Box, Button, Container, Heading, Image } from '@chakra-ui/react';
+
+import Section from './section';
+import Paragraph from '../components/paragraph';
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import NextLink from 'next/link';
 
 const Page = () => {
   return (
@@ -29,6 +34,21 @@ const Page = () => {
           />
         </Box>
       </Box>
+      <Section delay={0.1}>
+        <Heading as={'h3'} variant="section-title">
+          Образование
+        </Heading>
+        <Paragraph>Lorem ipsum dolor</Paragraph>
+      </Section>
+
+      <Section delay={0.2} my={4}>
+        <Heading as={'h3'} variant={'section-title'}>
+          Портфолио
+        </Heading>
+        <Button rightIcon={<ChevronRightIcon />} colorScheme={'teal'} my={3}>
+          <NextLink href={'/projects'}>Проекты</NextLink>
+        </Button>
+      </Section>
     </Container>
   );
 };
