@@ -35,11 +35,15 @@ const colors = {
   glassTeal: '#88ccca'
 };
 
+const fonts = {
+  headings: "'Bellota'"
+};
+
 const config = {
   initialColorMode: 'dark',
   useSystemColorMode: true
 };
 
-const theme = extendTheme(config, styles, components, colors);
+const theme = extendTheme(config, styles, components, colors, fonts);
 
 export default theme;
