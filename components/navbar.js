@@ -56,7 +56,12 @@ const Navbar = props => {
       >
         <Flex align={'center'} mr={5}>
           <NextLink href={'/'}>
-            <Heading as={'h1'} size={'lg'} letterSpacing={'tighter'} style={{userSelect: "none", cursor: "pointer"}}>
+            <Heading
+              as={'h1'}
+              size={'lg'}
+              letterSpacing={'tighter'}
+              style={{ userSelect: 'none', cursor: 'pointer' }}
+            >
               dadyarri
             </Heading>
           </NextLink>
