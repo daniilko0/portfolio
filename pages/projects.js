@@ -6,7 +6,7 @@ import Layout from '../components/layouts/article';
 
 const Projects = () => {
   return (
-    <Layout title={"Проекты"}>
+    <Layout title={'Проекты'}>
       <Container>
         <Heading as={'h3'} fontSize={20} mb={4}>
           Проекты

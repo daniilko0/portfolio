@@ -10,7 +10,7 @@ import Layout from '../components/layouts/article';
 
 const Page = () => {
   return (
-    <Layout title={"Главная"}>
+    <Layout title={'Главная'}>
       <Container>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
