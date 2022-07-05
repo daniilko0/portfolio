@@ -5,7 +5,7 @@ import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
 import { BioSection, BioYear } from './bio';
-import SectionTitle from "../components/section-title";
+import SectionTitle from '../components/section-title';
 
 const Page = () => {
   return (
@@ -37,9 +37,7 @@ const Page = () => {
         </Box>
       </Box>
       <Section delay={0.1}>
-        <SectionTitle>
-          Биография
-        </SectionTitle>
+        <SectionTitle>Биография</SectionTitle>
         <BioSection>
           <BioYear>2001</BioYear>Родился в Фурманове, Россия
         </BioSection>
@@ -54,9 +52,7 @@ const Page = () => {
       </Section>
 
       <Section delay={0.2} my={4}>
-        <SectionTitle>
-          Работа
-        </SectionTitle>
+        <SectionTitle>Работа</SectionTitle>
         <Paragraph>
           Начинающий бэкенд-разработчик, изучаю .NET, пытаюсь в руководство
           разработкой.
