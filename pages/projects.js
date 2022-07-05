@@ -16,7 +16,21 @@ const Projects = () => {
           <SectionTitle>Личные</SectionTitle>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
-              <ProjectsGridItem id={'choco'} title={'ChocoManager'}>
+              <ProjectsGridItem
+                id={'choco'}
+                title={'ChocoManager'}
+                labels={[
+                  'Python',
+                  'FastAPI',
+                  'C#',
+                  'ASP.NET',
+                  'EF Core',
+                  'Docker Compose',
+                  'PostgreSQL',
+                  'VK API',
+                  'Telegram API'
+                ]}
+              >
                 <p>
                   Система работы с клиентами и остатками в интернет-магазине
                 </p>
@@ -28,7 +42,11 @@ const Projects = () => {
           <SectionTitle>Работа в команде</SectionTitle>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
-              <ProjectsGridItem id={'star'} title={'Student Archive'}>
+              <ProjectsGridItem
+                id={'star'}
+                title={'Student Archive'}
+                labels={['Java', 'Spark framework', 'JDBC', 'PostgreSQL']}
+              >
                 <p>
                   Приложение для архивирования учебных материалов, полезных
                   студентам

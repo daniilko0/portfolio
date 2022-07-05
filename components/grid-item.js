@@ -1,6 +1,6 @@
 import NextLink from 'next/link';
 import Image from 'next/image';
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react';
+import { Box, Text, LinkBox, LinkOverlay, Badge } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
 
 export const GridItem = ({ children, title, href, thumbnail }) => {
@@ -23,7 +23,24 @@ export const GridItem = ({ children, title, href, thumbnail }) => {
   );
 };
 
-export const ProjectsGridItem = ({ children, id, title, thumbnail }) => {
+export const ProjectsGridItem = ({
+  children,
+  id,
+  title,
+  thumbnail,
+  labels
+}) => {
+  const colorSchemas = [
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'teal',
+    'blue',
+    'cyan',
+    'purple',
+    'pink'
+  ];
   return (
     <Box w={'100%'} align={'center'}>
       <NextLink href={`/project/${id}`}>
@@ -44,6 +61,19 @@ export const ProjectsGridItem = ({ children, id, title, thumbnail }) => {
           <Text fontSize={14}>{children}</Text>
         </LinkBox>
       </NextLink>
+      {labels
+        ? labels.map((label, _) => (
+            <Badge
+              colorScheme={
+                colorSchemas[Math.floor(Math.random() * colorSchemas.length)]
+              }
+              variant={'outline'}
+              mx={1}
+            >
+              {label}
+            </Badge>
+          ))
+        : null}
     </Box>
   );
 };
