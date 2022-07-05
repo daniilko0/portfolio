@@ -4,6 +4,8 @@ import Section from './section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
+import { BioSection, BioYear } from './bio';
+import SectionTitle from "../components/section-title";
 
 const Page = () => {
   return (
@@ -35,18 +37,29 @@ const Page = () => {
         </Box>
       </Box>
       <Section delay={0.1}>
-        <Heading as={'h3'} variant="section-title">
-          Образование
-        </Heading>
-        <Paragraph>Lorem ipsum dolor</Paragraph>
+        <SectionTitle>
+          Биография
+        </SectionTitle>
+        <BioSection>
+          <BioYear>2001</BioYear>Родился в Фурманове, Россия
+        </BioSection>
+        <BioSection>
+          <BioYear>2020 &ndash; н. в.</BioYear>Учусь в ВлГУ, Информационные
+          системы и технологии, бакалавр
+        </BioSection>
+        <BioSection>
+          <BioYear>июн &ndash; сен 2021</BioYear>Работал преподавателем детских
+          IT-курсов в академии "top"
+        </BioSection>
       </Section>
 
       <Section delay={0.2} my={4}>
-        <Heading as={'h3'} variant={'section-title'}>
+        <SectionTitle>
           Работа
-        </Heading>
+        </SectionTitle>
         <Paragraph>
-            Начинающий бэкенд-разработчик, изучаю .NET, пытаюсь в руководство разработкой.
+          Начинающий бэкенд-разработчик, изучаю .NET, пытаюсь в руководство
+          разработкой.
         </Paragraph>
         <Button rightIcon={<ChevronRightIcon />} colorScheme={'teal'} my={3}>
           <NextLink href={'/projects'}>Проекты</NextLink>
