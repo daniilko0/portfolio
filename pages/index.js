@@ -11,7 +11,7 @@ import Layout from '../components/layouts/article';
 const Page = () => {
   return (
     <Layout title={'Главная'}>
-      <Container>
+      <Container my={5}>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
