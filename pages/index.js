@@ -31,7 +31,7 @@ const Page = () => {
             height={100}
             display={'inline-block'}
             borderRadius={'full'}
-            src={'/images/avatar.jpg'}
+            src={'/images/avatar.jpeg'}
             marginTop={3}
           />
         </Box>
