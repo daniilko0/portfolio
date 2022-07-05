@@ -2,6 +2,7 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 import { Box, Text, LinkBox, LinkOverlay, Badge } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
+import { Meta } from './project/project';
 
 export const GridItem = ({ children, title, href, thumbnail }) => {
   return (
@@ -30,17 +31,6 @@ export const ProjectsGridItem = ({
   thumbnail,
   labels
 }) => {
-  const colorSchemas = [
-    'red',
-    'orange',
-    'yellow',
-    'green',
-    'teal',
-    'blue',
-    'cyan',
-    'purple',
-    'pink'
-  ];
   return (
     <Box w={'100%'} align={'center'}>
       <NextLink href={`/project/${id}`}>
@@ -61,19 +51,7 @@ export const ProjectsGridItem = ({
           <Text fontSize={14}>{children}</Text>
         </LinkBox>
       </NextLink>
-      {labels
-        ? labels.map((label, _) => (
-            <Badge
-              colorScheme={
-                colorSchemas[Math.floor(Math.random() * colorSchemas.length)]
-              }
-              variant={'outline'}
-              mx={1}
-            >
-              {label}
-            </Badge>
-          ))
-        : null}
+      {labels ? labels.map((label, _) => <Meta>{label}</Meta>) : null}
     </Box>
   );
 };
