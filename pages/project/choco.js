@@ -1,5 +1,5 @@
 import Layout from '../../components/layouts/article';
-import { Container, List, ListItem, Text, Link } from '@chakra-ui/react';
+import {Container, List, ListItem, Text, Link, useColorModeValue} from '@chakra-ui/react';
 import { Meta, Project, ProjectImage } from '../../components/project/project';
 import Paragraph from '../../components/paragraph';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
@@ -34,7 +34,7 @@ const Choco = () => {
           </ListItem>
         </List>
         <ProjectImage
-          src={'/images/choco-menu.png'}
+          src={useColorModeValue('/images/choco-menu-light.png', '/images/choco-menu-dark.png')}
           alt={'chocomanager main menu'}
         />
       </Container>
