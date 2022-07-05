@@ -43,8 +43,11 @@ const Page = () => {
 
       <Section delay={0.2} my={4}>
         <Heading as={'h3'} variant={'section-title'}>
-          Портфолио
+          Работа
         </Heading>
+        <Paragraph>
+            Начинающий бэкенд-разработчик, изучаю .NET, пытаюсь в руководство разработкой.
+        </Paragraph>
         <Button rightIcon={<ChevronRightIcon />} colorScheme={'teal'} my={3}>
           <NextLink href={'/projects'}>Проекты</NextLink>
         </Button>
