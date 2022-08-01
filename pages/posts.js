@@ -1,6 +1,5 @@
 import Layout from '../components/layouts/article';
-import { Container, Grid, Heading, SimpleGrid } from '@chakra-ui/react';
-import axios from 'axios';
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 import { GridItem } from '../components/grid-item';
 
 const Posts = () => {
