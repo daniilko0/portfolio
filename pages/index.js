@@ -71,8 +71,7 @@ const Page = () => {
             Работа
           </Heading>
           <Paragraph>
-            Начинающий бэкенд-разработчик, изучаю .NET, пытаюсь в руководство
-            разработкой.
+            Начинающий бэкенд-разработчик и тех-лид, изучаю .NET.
           </Paragraph>
           <Button rightIcon={<ChevronRightIcon />} colorScheme={'teal'} my={3}>
             <NextLink href={'/projects'}>Проекты</NextLink>
