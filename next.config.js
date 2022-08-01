@@ -1,10 +1,5 @@
 const options = {
-  reactStrictMode: true,
-  experimental: {
-    images: {
-      unoptimized: true
-    },
-  }
+  reactStrictMode: true
 };
 
 module.exports = options;
