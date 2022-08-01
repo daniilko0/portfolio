@@ -1,6 +1,6 @@
 import NextLink from 'next/link';
 import Image from 'next/image';
-import { Box, Text, LinkBox, LinkOverlay, Badge } from '@chakra-ui/react';
+import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
 import { Meta } from './project/project';
 
@@ -12,7 +12,6 @@ export const GridItem = ({ children, title, href, thumbnail }) => {
           src={thumbnail}
           alt={title}
           className={'grid-item-thumbnail'}
-          // placeholder={'blur'}
           loading={'lazy'}
           width={900}
           height={600}

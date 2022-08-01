@@ -1,5 +1,5 @@
 import Layout from '../../components/layouts/article';
-import { Container, List, ListItem, Text, Link } from '@chakra-ui/react';
+import { Container, List, ListItem, Link } from '@chakra-ui/react';
 import { Meta, Project, ProjectImage } from '../../components/project/project';
 import Paragraph from '../../components/paragraph';
 import { ExternalLinkIcon } from '@chakra-ui/icons';

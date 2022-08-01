@@ -13,10 +13,11 @@ import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon, Icon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
-import { BioSection, BioYear } from './bio';
+import { BioSection, BioYear } from '../components/bio';
 import SectionTitle from '../components/section-title';
 import Layout from '../components/layouts/article';
-import { IoLogoGithub, IoLogoVk, BsTelegram } from 'react-icons/all';
+import { IoLogoGithub, IoLogoVk } from 'react-icons/io5';
+import { BsTelegram } from 'react-icons/bs';
 
 const Page = () => {
   return (
@@ -36,6 +37,7 @@ const Page = () => {
             align={'center'}
           >
             <Image
+                alt={"avatar"}
               borderColor={'whiteAlpha.800'}
               borderWidth={2}
               borderStyle={'solid'}
@@ -59,7 +61,7 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>июн &ndash; сен 2021</BioYear>Работал преподавателем
-            детских IT-курсов в академии "top"
+            детских IT-курсов в академии &quot;top&quot;
           </BioSection>
         </Section>
 

@@ -3,7 +3,6 @@ import {
   Container,
   List,
   ListItem,
-  Text,
   Link,
   useColorModeValue
 } from '@chakra-ui/react';
