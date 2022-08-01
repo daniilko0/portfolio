@@ -40,7 +40,8 @@ export const Meta = ({ children }) => {
         colorSchemas[Math.floor(Math.random() * colorSchemas.length)]
       }
       variant={'outline'}
-      mx={1}
+      ml={1}
+      mr={3}
       p={1}
     >
       {children}
