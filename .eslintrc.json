@@ -8,6 +8,7 @@
         "argsIgnorePattern": "^_",
         "varsIgnorePattern": "^_"
       }
-    ]
+    ],
+    "react/jsx-key": "off"
   }
 }
