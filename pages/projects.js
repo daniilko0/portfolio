@@ -12,7 +12,9 @@ const Projects = () => {
         </Heading>
 
         <Section>
-          <Heading as={"h3"} variant={"sectionTitle"}>Личные</Heading>
+          <Heading as={'h3'} variant={'sectionTitle'}>
+            Личные
+          </Heading>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
               <ProjectsGridItem
@@ -35,24 +37,21 @@ const Projects = () => {
                 </p>
               </ProjectsGridItem>
             </Section>
-          <Section>
+            <Section>
               <ProjectsGridItem
                 id={'cv'}
                 title={'Сайт-резюме'}
-                labels={[
-                    "React",
-                    "Next.js"
-                ]}
+                labels={['React', 'Next.js']}
               >
-                <p>
-                  Этот сайт с резюме и перечнем реализованных проектов
-                </p>
+                <p>Этот сайт с резюме и перечнем реализованных проектов</p>
               </ProjectsGridItem>
             </Section>
           </SimpleGrid>
         </Section>
         <Section>
-          <Heading as={"h3"} variant={"sectionTitle"}>Работа в команде</Heading>
+          <Heading as={'h3'} variant={'sectionTitle'}>
+            Работа в команде
+          </Heading>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
               <ProjectsGridItem

@@ -22,13 +22,13 @@ const theme = extendTheme({
     Heading: {
       variants: {
         sectionTitle: {
-          textDecoration: "underline",
-          fontSize: "24px",
-          textUnderlineOffset: "6px",
-          textDecorationColor: "#525252",
-          textDecorationThickness: "4px",
-          marginTop: "3px",
-          marginBottom: "10px",
+          textDecoration: 'underline',
+          fontSize: '24px',
+          textUnderlineOffset: '6px',
+          textDecorationColor: '#525252',
+          textDecorationThickness: '4px',
+          marginTop: '3px',
+          marginBottom: '10px'
         }
       }
     }

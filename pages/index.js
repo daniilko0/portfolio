@@ -50,7 +50,9 @@ const Page = () => {
           </Box>
         </Box>
         <Section delay={0.1}>
-          <Heading variant={"sectionTitle"} as={"h3"}>Биография</Heading>
+          <Heading variant={'sectionTitle'} as={'h3'}>
+            Биография
+          </Heading>
           <BioSection>
             <BioYear>2001</BioYear>Родился в Фурманове, Россия
           </BioSection>
@@ -65,7 +67,9 @@ const Page = () => {
         </Section>
 
         <Section delay={0.2} my={4}>
-          <Heading variant={"sectionTitle"} as={"h3"}>Работа</Heading>
+          <Heading variant={'sectionTitle'} as={'h3'}>
+            Работа
+          </Heading>
           <Paragraph>
             Начинающий бэкенд-разработчик, изучаю .NET, пытаюсь в руководство
             разработкой.
@@ -76,7 +80,9 @@ const Page = () => {
         </Section>
 
         <Section delay={0.3} my={4}>
-          <Heading variant={"sectionTitle"} as={"h3"}>Я в интернете</Heading>
+          <Heading variant={'sectionTitle'} as={'h3'}>
+            Я в интернете
+          </Heading>
           <List>
             <ListItem>
               <Link href={'https://github.com/dadyarri'} target={'_blank'}>
