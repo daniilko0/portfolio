@@ -31,6 +31,7 @@ const Projects = () => {
                   'VK API',
                   'Telegram API'
                 ]}
+                thumbnail={'/images/choco_manager.png'}
               >
                 <p>
                   Система работы с клиентами и остатками в интернет-магазине
