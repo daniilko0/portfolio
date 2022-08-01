@@ -18,6 +18,19 @@ const theme = extendTheme({
         color: mode('#3d7aed', '#ff63c3'),
         textUnderlineOffset: 3
       }
+    },
+    Heading: {
+      variants: {
+        sectionTitle: {
+          textDecoration: "underline",
+          fontSize: "24px",
+          textUnderlineOffset: "6px",
+          textDecorationColor: "#525252",
+          textDecorationThickness: "4px",
+          marginTop: "3px",
+          marginBottom: "10px",
+        }
+      }
     }
   },
   colors: {

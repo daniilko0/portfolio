@@ -1,7 +1,6 @@
-import { Container, Heading, SimpleGrid} from '@chakra-ui/react';
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 import Section from '../components/section';
 import { ProjectsGridItem } from '../components/grid-item';
-import SectionTitle from '../components/section-title';
 import Layout from '../components/layouts/article';
 
 const Projects = () => {
@@ -13,7 +12,7 @@ const Projects = () => {
         </Heading>
 
         <Section>
-          <SectionTitle>Личные</SectionTitle>
+          <Heading as={"h3"} variant={"sectionTitle"}>Личные</Heading>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
               <ProjectsGridItem
@@ -39,7 +38,7 @@ const Projects = () => {
           </SimpleGrid>
         </Section>
         <Section>
-          <SectionTitle>Работа в команде</SectionTitle>
+          <Heading as={"h3"} variant={"sectionTitle"}>Работа в команде</Heading>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
               <ProjectsGridItem
