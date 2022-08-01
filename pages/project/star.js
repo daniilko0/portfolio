@@ -18,6 +18,7 @@ const Star = () => {
         <Paragraph>
           На данный момент разработан только бэкенд (REST API)
         </Paragraph>
+        <Paragraph><b>Роль в проекте:</b> технический директор, ведущий разработчик, архитектор базы данных</Paragraph>
         <List ml={4} my={4}>
           <ListItem my={2}>
             <Meta>Исходный код</Meta>
