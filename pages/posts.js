@@ -16,7 +16,8 @@ const Posts = () => {
             thumbnail={'/images/control-review.png'}
           >
             Немного запоздалого мнения о Control (2019)
-          </GridItem><GridItem
+          </GridItem>
+          <GridItem
             title={'Второй мозг. Reinvented edition'}
             href={'https://teletype.in/@yadevblog/second-mind-ed2'}
             thumbnail={'/images/second-mind-ed2.png'}
