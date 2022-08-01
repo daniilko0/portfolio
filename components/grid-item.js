@@ -16,9 +16,9 @@ export const GridItem = ({ children, title, href, thumbnail }) => {
           width={900}
           height={600}
         />
-      <LinkOverlay href={href} target={'_blank'}>
-        <Text mt={2}>{title}</Text>
-      </LinkOverlay>
+        <LinkOverlay href={href} target={'_blank'}>
+          <Text mt={2}>{title}</Text>
+        </LinkOverlay>
       </LinkBox>
       <Text fontSize={14}>{children}</Text>
     </Box>
