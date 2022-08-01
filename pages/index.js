@@ -51,11 +51,8 @@ const Page = () => {
         </Box>
         <Section delay={0.1}>
           <Heading variant={'sectionTitle'} as={'h3'}>
-            Биография
+            Образование и опыт
           </Heading>
-          <BioSection>
-            <BioYear>2001</BioYear>Родился в Фурманове, Россия
-          </BioSection>
           <BioSection>
             <BioYear>2020 &ndash; н. в.</BioYear>Учусь в ВлГУ, Информационные
             системы и технологии, бакалавр
