@@ -1,12 +1,22 @@
-import { Box, Button, Container, Heading, Image } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  Image,
+  List,
+  ListItem,
+  Link
+} from '@chakra-ui/react';
 
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
-import { ChevronRightIcon } from '@chakra-ui/icons';
+import { ChevronRightIcon, Icon } from '@chakra-ui/icons';
 import NextLink from 'next/link';
 import { BioSection, BioYear } from './bio';
 import SectionTitle from '../components/section-title';
 import Layout from '../components/layouts/article';
+import { IoLogoGithub, IoLogoVk, BsTelegram } from 'react-icons/all';
 
 const Page = () => {
   return (
@@ -17,7 +27,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Даниил Голубев
             </Heading>
-            <p>Бэкенд-разработчик, фанат Jetbrains</p>
+            <p>Бэкенд-разработчик, фанат Jetbrains, Linux-энтузиаст</p>
           </Box>
           <Box
             flexShrink={0}
@@ -62,6 +72,56 @@ const Page = () => {
           <Button rightIcon={<ChevronRightIcon />} colorScheme={'teal'} my={3}>
             <NextLink href={'/projects'}>Проекты</NextLink>
           </Button>
+        </Section>
+
+        <Section delay={0.3} my={4}>
+          <SectionTitle>Я в интернете</SectionTitle>
+          <List>
+            <ListItem>
+              <Link href={'https://github.com/dadyarri'} target={'_blank'}>
+                <Button
+                  variant={'ghost'}
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @dadyarri
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={'https://vk.com/dadyarri'} target={'_blank'}>
+                <Button
+                  variant={'ghost'}
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoVk} />}
+                >
+                  @dadyarri
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={'https://t.me/dadyarri'} target={'_blank'}>
+                <Button
+                  variant={'ghost'}
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={BsTelegram} />}
+                >
+                  @dadyarri
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={'https://t.me/yadevblog'} target={'_blank'}>
+                <Button
+                  variant={'ghost'}
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={BsTelegram} />}
+                >
+                  @yadevblog
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
