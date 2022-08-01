@@ -35,6 +35,20 @@ const Projects = () => {
                 </p>
               </ProjectsGridItem>
             </Section>
+          <Section>
+              <ProjectsGridItem
+                id={'cv'}
+                title={'Сайт-резюме'}
+                labels={[
+                    "React",
+                    "Next.js"
+                ]}
+              >
+                <p>
+                  Этот сайт с резюме и перечнем реализованных проектов
+                </p>
+              </ProjectsGridItem>
+            </Section>
           </SimpleGrid>
         </Section>
         <Section>
