@@ -20,8 +20,8 @@ import { BioSection, BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
 import { IoLogoGithub, IoLogoVk } from 'react-icons/io5';
 import { BsTelegram } from 'react-icons/bs';
-import { DiDotnet, DiPython } from 'react-icons/di'
-import { SiNim, SiGnubash } from 'react-icons/si'
+import { DiDotnet, DiPython } from 'react-icons/di';
+import { SiNim, SiGnubash } from 'react-icons/si';
 
 const Page = () => {
   return (
@@ -63,7 +63,8 @@ const Page = () => {
             системы и технологии, бакалавр
           </BioSection>
           <BioSection>
-            <BioYear>июн &ndash; сен 2021</BioYear>Преподаватель детских IT-курсов в академии &quot;top&quot;
+            <BioYear>июн &ndash; сен 2021</BioYear>Преподаватель детских
+            IT-курсов в академии &quot;top&quot;
           </BioSection>
         </Section>
 
@@ -80,29 +81,51 @@ const Page = () => {
         </Section>
 
         <Section>
-          <Heading variant={'sectionTitle'} as={'h3'}>Навыки</Heading>
+          <Heading variant={'sectionTitle'} as={'h3'}>
+            Навыки
+          </Heading>
           <List>
             <ListItem m={1}>
-              <Tag size={'lg'} key={'dotnet'} variant={'subtle'} colorScheme={'teal'}>
-                <TagLeftIcon boxSize={'20px'} as={DiDotnet}/>
+              <Tag
+                size={'lg'}
+                key={'dotnet'}
+                variant={'subtle'}
+                colorScheme={'teal'}
+              >
+                <TagLeftIcon boxSize={'20px'} as={DiDotnet} />
                 <TagLabel>dotnet</TagLabel>
               </Tag>
             </ListItem>
             <ListItem m={1}>
-              <Tag size={'lg'} key={'python'} variant={'subtle'} colorScheme={'teal'}>
-                <TagLeftIcon boxSize={'20px'} as={DiPython}/>
+              <Tag
+                size={'lg'}
+                key={'python'}
+                variant={'subtle'}
+                colorScheme={'teal'}
+              >
+                <TagLeftIcon boxSize={'20px'} as={DiPython} />
                 <TagLabel>python</TagLabel>
               </Tag>
             </ListItem>
             <ListItem m={1}>
-              <Tag size={'lg'} key={'nim'} variant={'subtle'} colorScheme={'teal'}>
-                <TagLeftIcon boxSize={'20px'} as={SiNim}/>
+              <Tag
+                size={'lg'}
+                key={'nim'}
+                variant={'subtle'}
+                colorScheme={'teal'}
+              >
+                <TagLeftIcon boxSize={'20px'} as={SiNim} />
                 <TagLabel>nim</TagLabel>
               </Tag>
             </ListItem>
             <ListItem m={1}>
-              <Tag size={'lg'} key={'bash'} variant={'subtle'} colorScheme={'teal'}>
-                <TagLeftIcon boxSize={'20px'} as={SiGnubash}/>
+              <Tag
+                size={'lg'}
+                key={'bash'}
+                variant={'subtle'}
+                colorScheme={'teal'}
+              >
+                <TagLeftIcon boxSize={'20px'} as={SiGnubash} />
                 <TagLabel>bash</TagLabel>
               </Tag>
             </ListItem>
