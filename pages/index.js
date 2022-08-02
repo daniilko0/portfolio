@@ -6,7 +6,10 @@ import {
   Image,
   List,
   ListItem,
-  Link
+  Link,
+  Tag,
+  TagLeftIcon,
+  TagLabel
 } from '@chakra-ui/react';
 
 import Section from '../components/section';
@@ -17,6 +20,8 @@ import { BioSection, BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
 import { IoLogoGithub, IoLogoVk } from 'react-icons/io5';
 import { BsTelegram } from 'react-icons/bs';
+import { DiDotnet, DiPython } from 'react-icons/di'
+import { SiNim, SiGnubash } from 'react-icons/si'
 
 const Page = () => {
   return (
@@ -73,6 +78,36 @@ const Page = () => {
           <Button rightIcon={<ChevronRightIcon />} colorScheme={'teal'} my={3}>
             <NextLink href={'/projects'}>Проекты</NextLink>
           </Button>
+        </Section>
+
+        <Section>
+          <Heading variant={'sectionTitle'} as={'h3'}>Навыки</Heading>
+          <List>
+            <ListItem m={1}>
+              <Tag size={'lg'} key={'dotnet'} variant={'subtle'} colorScheme={'teal'}>
+                <TagLeftIcon boxSize={'20px'} as={DiDotnet}/>
+                <TagLabel>dotnet</TagLabel>
+              </Tag>
+            </ListItem>
+            <ListItem m={1}>
+              <Tag size={'lg'} key={'python'} variant={'subtle'} colorScheme={'teal'}>
+                <TagLeftIcon boxSize={'20px'} as={DiPython}/>
+                <TagLabel>python</TagLabel>
+              </Tag>
+            </ListItem>
+            <ListItem m={1}>
+              <Tag size={'lg'} key={'nim'} variant={'subtle'} colorScheme={'teal'}>
+                <TagLeftIcon boxSize={'20px'} as={SiNim}/>
+                <TagLabel>nim</TagLabel>
+              </Tag>
+            </ListItem>
+            <ListItem m={1}>
+              <Tag size={'lg'} key={'bash'} variant={'subtle'} colorScheme={'teal'}>
+                <TagLeftIcon boxSize={'20px'} as={SiGnubash}/>
+                <TagLabel>bash</TagLabel>
+              </Tag>
+            </ListItem>
+          </List>
         </Section>
 
         <Section delay={0.3} my={4}>
