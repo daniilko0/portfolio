@@ -43,6 +43,7 @@ const Projects = () => {
                 id={'cv'}
                 title={'Сайт-резюме'}
                 labels={['React', 'Next.js']}
+                thumbnail={'/images/cv-thumbnail.png'}
               >
                 <p>Этот сайт с резюме и перечнем реализованных проектов</p>
               </ProjectsGridItem>
