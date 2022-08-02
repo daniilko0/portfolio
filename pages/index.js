@@ -10,7 +10,7 @@ import {
   Tag,
   TagLeftIcon,
   TagLabel,
-  Tooltip
+  Tooltip, HStack, VStack
 } from '@chakra-ui/react';
 
 import Section from '../components/section';
@@ -85,9 +85,9 @@ const Page = () => {
           <Heading variant={'sectionTitle'} as={'h3'}>
             Навыки
           </Heading>
-          <List>
-            <ListItem m={1}>
-              <Tooltip hasArrow label={"ef core, asp.net"} placement={"right"}>
+          <VStack>
+            <HStack>
+              <Tooltip hasArrow label={"ef core, asp.net"} placement={"top"}>
                 <Tag
                     size={'lg'}
                     key={'dotnet'}
@@ -98,32 +98,30 @@ const Page = () => {
                   <TagLabel>dotnet</TagLabel>
                 </Tag>
               </Tooltip>
-            </ListItem>
-            <ListItem m={1}>
-              <Tooltip hasArrow label={"fastapi, tortoise"} placement={"right"}>
-              <Tag
-                size={'lg'}
-                key={'python'}
-                variant={'subtle'}
-                colorScheme={'teal'}
-              >
-                <TagLeftIcon boxSize={'20px'} as={DiPython} />
-                <TagLabel>python</TagLabel>
-              </Tag>
+
+              <Tooltip hasArrow label={"fastapi, tortoise"} placement={"top"}>
+                <Tag
+                    size={'lg'}
+                    key={'python'}
+                    variant={'subtle'}
+                    colorScheme={'teal'}
+                >
+                  <TagLeftIcon boxSize={'20px'} as={DiPython} />
+                  <TagLabel>python</TagLabel>
+                </Tag>
               </Tooltip>
-            </ListItem>
-            <ListItem m={1}>
               <Tag
-                size={'lg'}
-                key={'nim'}
-                variant={'subtle'}
-                colorScheme={'teal'}
+                  size={'lg'}
+                  key={'nim'}
+                  variant={'subtle'}
+                  colorScheme={'teal'}
               >
                 <TagLeftIcon boxSize={'20px'} as={SiNim} />
                 <TagLabel>nim</TagLabel>
               </Tag>
-            </ListItem>
-            <ListItem m={1}>
+            </HStack>
+            <VStack>
+              <HStack>
               <Tag
                 size={'lg'}
                 key={'bash'}
@@ -133,21 +131,22 @@ const Page = () => {
                 <TagLeftIcon boxSize={'20px'} as={SiGnubash} />
                 <TagLabel>bash</TagLabel>
               </Tag>
-            </ListItem>
-            <ListItem m={1}>
-              <Tooltip hasArrow label={"docker compose"} placement={"right"}>
-              <Tag
-                  size={'lg'}
-                  key={'docker'}
-                  variant={'subtle'}
-                  colorScheme={'teal'}
-              >
-                <TagLeftIcon boxSize={'20px'} as={SiDocker} />
-                <TagLabel>docker</TagLabel>
-              </Tag>
+
+              <Tooltip hasArrow label={"docker compose"} placement={"bottom"}>
+                <Tag
+                    size={'lg'}
+                    key={'docker'}
+                    variant={'subtle'}
+                    colorScheme={'teal'}
+                >
+                  <TagLeftIcon boxSize={'20px'} as={SiDocker} />
+                  <TagLabel>docker</TagLabel>
+                </Tag>
               </Tooltip>
-            </ListItem>
-          </List>
+                </HStack>
+            </VStack>
+
+          </VStack>
         </Section>
 
         <Section delay={0.3} my={4}>
