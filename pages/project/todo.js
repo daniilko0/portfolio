@@ -4,7 +4,7 @@ import {
     List,
     ListItem,
     Link,
-    useColorModeValue, UnorderedList
+    UnorderedList
 } from '@chakra-ui/react';
 import { Meta, Project, ProjectImage } from '../../components/project/project';
 import Paragraph from '../../components/paragraph';
@@ -30,7 +30,7 @@ const Choco = () => {
                             Удаление задачи
                         </ListItem>
                         <ListItem>
-                             Установка статуса "Выполнено" задаче
+                             Установка статуса &quot;Выполнено&quot; задаче
                         </ListItem>
                         <ListItem>
                             Отображение списка задач
