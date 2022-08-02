@@ -63,8 +63,7 @@ const Page = () => {
             системы и технологии, бакалавр
           </BioSection>
           <BioSection>
-            <BioYear>июн &ndash; сен 2021</BioYear>Работал преподавателем
-            детских IT-курсов в академии &quot;top&quot;
+            <BioYear>июн &ndash; сен 2021</BioYear>Преподаватель детских IT-курсов в академии &quot;top&quot;
           </BioSection>
         </Section>
 
