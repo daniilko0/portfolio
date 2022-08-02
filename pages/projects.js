@@ -48,6 +48,20 @@ const Projects = () => {
                 <p>Этот сайт с резюме и перечнем реализованных проектов</p>
               </ProjectsGridItem>
             </Section>
+              <Section>
+                  <ProjectsGridItem
+                      id={'todo'}
+                      title={'To-Do CLI'}
+                      labels={[
+                          'Nim',
+                      ]}
+                      // thumbnail={'/images/choco_manager_logo.jpg'}
+                  >
+                      <p>
+                          Менеджер задач в консоли
+                      </p>
+                  </ProjectsGridItem>
+              </Section>
           </SimpleGrid>
         </Section>
         <Section>
