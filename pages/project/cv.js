@@ -22,7 +22,7 @@ const Cv = () => (
         </ListItem>
         <ListItem my={2}>
           <Meta>Ссылка на сайт</Meta>
-          <Link href={'http://dadyarri.ru'}>https://dadyarri.ru</Link>
+          <Link href={'https://dadyarri.ru'}>https://dadyarri.ru</Link>
         </ListItem>
       </List>
       <ProjectImage src={'/images/cv-home-page.png'} alt={'cv home page'} />
