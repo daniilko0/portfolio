@@ -9,7 +9,8 @@ import {
   Link,
   Tag,
   TagLeftIcon,
-  TagLabel
+  TagLabel,
+  Tooltip
 } from '@chakra-ui/react';
 
 import Section from '../components/section';
@@ -21,7 +22,7 @@ import Layout from '../components/layouts/article';
 import { IoLogoGithub, IoLogoVk } from 'react-icons/io5';
 import { BsTelegram } from 'react-icons/bs';
 import { DiDotnet, DiPython } from 'react-icons/di';
-import { SiNim, SiGnubash } from 'react-icons/si';
+import { SiNim, SiGnubash, SiDocker } from 'react-icons/si';
 
 const Page = () => {
   return (
@@ -86,17 +87,20 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem m={1}>
-              <Tag
-                size={'lg'}
-                key={'dotnet'}
-                variant={'subtle'}
-                colorScheme={'teal'}
-              >
-                <TagLeftIcon boxSize={'20px'} as={DiDotnet} />
-                <TagLabel>dotnet</TagLabel>
-              </Tag>
+              <Tooltip hasArrow label={"ef core, asp.net"} placement={"right"}>
+                <Tag
+                    size={'lg'}
+                    key={'dotnet'}
+                    variant={'subtle'}
+                    colorScheme={'teal'}
+                >
+                  <TagLeftIcon boxSize={'20px'} as={DiDotnet} />
+                  <TagLabel>dotnet</TagLabel>
+                </Tag>
+              </Tooltip>
             </ListItem>
             <ListItem m={1}>
+              <Tooltip hasArrow label={"fastapi, tortoise"} placement={"right"}>
               <Tag
                 size={'lg'}
                 key={'python'}
@@ -106,6 +110,7 @@ const Page = () => {
                 <TagLeftIcon boxSize={'20px'} as={DiPython} />
                 <TagLabel>python</TagLabel>
               </Tag>
+              </Tooltip>
             </ListItem>
             <ListItem m={1}>
               <Tag
@@ -128,6 +133,19 @@ const Page = () => {
                 <TagLeftIcon boxSize={'20px'} as={SiGnubash} />
                 <TagLabel>bash</TagLabel>
               </Tag>
+            </ListItem>
+            <ListItem m={1}>
+              <Tooltip hasArrow label={"docker compose"} placement={"right"}>
+              <Tag
+                  size={'lg'}
+                  key={'docker'}
+                  variant={'subtle'}
+                  colorScheme={'teal'}
+              >
+                <TagLeftIcon boxSize={'20px'} as={SiDocker} />
+                <TagLabel>docker</TagLabel>
+              </Tag>
+              </Tooltip>
             </ListItem>
           </List>
         </Section>
