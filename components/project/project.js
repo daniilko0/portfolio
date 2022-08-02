@@ -42,6 +42,7 @@ export const Meta = ({ children }) => {
       variant={'outline'}
       ml={1}
       mr={3}
+      my={1}
       p={1}
     >
       {children}
