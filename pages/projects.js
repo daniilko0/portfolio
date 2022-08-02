@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <Layout title={'Проекты'}>
       <Container my={5}>
-        <Heading as={'h2'} fontSize={26} mb={4}>
+        <Heading as={'h2'} variant={'page-title'} mb={4}>
           Проекты
         </Heading>
 

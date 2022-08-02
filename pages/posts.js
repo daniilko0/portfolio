@@ -6,7 +6,7 @@ const Posts = () => {
   return (
     <Layout title={'Актуальные публикации'}>
       <Container my={5}>
-        <Heading as={'h3'} fontSize={20} mb={3}>
+        <Heading as={'h2'} variant={'page-title'} mb={4}>
           Публикации
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
