@@ -1,7 +1,7 @@
-import { Box, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
+import {Box, LinkBox, LinkOverlay, Text} from "@chakra-ui/react";
 import NextLink from "next/link";
 import Image from "next/image";
-import { Meta } from "./project/meta";
+import {Meta} from "./project/meta";
 import React from "react";
 
 type Props = {
@@ -20,7 +20,8 @@ export const ProjectsGridItem = ({
   labels
 }: Props) => {
   return (
-    <Box w={"100%"}>
+      // @ts-ignore 2322
+      <Box w={"100%"} align={"center"}>
       <NextLink href={`/project/${id}`}>
         <LinkBox cursor={"pointer"}>
           <Image
