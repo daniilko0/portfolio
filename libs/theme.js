@@ -1,5 +1,5 @@
 import { mode } from '@chakra-ui/theme-tools';
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, useColorModeValue } from '@chakra-ui/react';
 const theme = extendTheme({
   config: {
     initialColorMode: 'dark',
@@ -8,28 +8,29 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: mode('#f0e7db', '#202023')
+        bg: mode('#ffffff', '#202023')
       }
     }
   },
   components: {
     Link: {
-      baseStyle: {
-        color: mode('#3d7aed', '#ff63c3'),
+      baseStyle: (props) => ({
+        color: mode('teal.300', 'teal.500')(props),
         textUnderlineOffset: 3
-      }
+      })
     },
     Heading: {
       variants: {
-        sectionTitle: {
+        sectionTitle: (props) => ({
           textDecoration: 'underline',
           fontSize: '24px',
           textUnderlineOffset: '6px',
-          textDecorationColor: '#525252',
+          textDecorationColor: mode('#525252', '#ffffff')(props),
           textDecorationThickness: '4px',
           marginTop: '3px',
-          marginBottom: '10px'
-        }
+          marginBottom: '10px',
+          color: mode('#202023', '#ffffff')(props)
+        })
       }
     }
   },
