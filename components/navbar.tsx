@@ -24,7 +24,6 @@ type Props = {
 
 const Navbar = (props: Props) => {
   const { path } = props;
-
   return (
     <Box
       position={"fixed"}
@@ -64,7 +63,8 @@ const Navbar = (props: Props) => {
             Публикации
           </LinkItem>
         </Stack>
-        <Box flex={1}>
+        {/*@ts-ignore 2322*/}
+        <Box flex={1} align={"right"}>
           <ThemeToggleButton />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu>
