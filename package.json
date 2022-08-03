@@ -28,5 +28,6 @@
     "build": "next build",
     "format": "prettier --write .",
     "lint": "next lint"
-  }
+  },
+  "browserslist": [">0.01%", "not ie 11", "not op_mini all"]
 }
