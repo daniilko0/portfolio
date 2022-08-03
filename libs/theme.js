@@ -14,14 +14,14 @@ const theme = extendTheme({
   },
   components: {
     Link: {
-      baseStyle: (props) => ({
+      baseStyle: props => ({
         color: mode('teal.300', 'teal.500')(props),
         textUnderlineOffset: 3
       })
     },
     Heading: {
       variants: {
-        sectionTitle: (props) => ({
+        sectionTitle: props => ({
           textDecoration: 'underline',
           fontSize: '24px',
           textUnderlineOffset: '6px',
