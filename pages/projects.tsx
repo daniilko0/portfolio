@@ -1,37 +1,38 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
-import Section from '../components/section';
-import { ProjectsGridItem } from '../components/grid-item';
-import Layout from '../components/layouts/article';
+import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import Section from "../components/section";
+import Layout from "../components/layouts/article";
+import { ProjectsGridItem } from "../components/projects-grid-item";
+import React from "react";
 
 const Projects = () => {
   return (
-    <Layout title={'Проекты'}>
+    <Layout title={"Проекты"}>
       <Container my={5}>
-        <Heading as={'h2'} variant={'page-title'} mb={4}>
+        <Heading as={"h2"} variant={"page-title"} mb={4}>
           Проекты
         </Heading>
 
         <Section>
-          <Heading as={'h3'} variant={'sectionTitle'}>
+          <Heading as={"h3"} variant={"sectionTitle"}>
             Личные
           </Heading>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
               <ProjectsGridItem
-                id={'choco'}
-                title={'ChocoManager'}
+                id={"choco"}
+                title={"ChocoManager"}
                 labels={[
-                  'Python',
-                  'FastAPI',
-                  'C#',
-                  'ASP.NET',
-                  'EF Core',
-                  'Docker Compose',
-                  'PostgreSQL',
-                  'VK API',
-                  'Telegram API'
+                  "Python",
+                  "FastAPI",
+                  "C#",
+                  "ASP.NET",
+                  "EF Core",
+                  "Docker Compose",
+                  "PostgreSQL",
+                  "VK API",
+                  "Telegram API"
                 ]}
-                thumbnail={'/images/choco_manager_logo.jpg'}
+                thumbnail={"/images/choco_manager_logo.jpg"}
               >
                 <p>
                   Система работы с клиентами и остатками в интернет-магазине
@@ -40,19 +41,19 @@ const Projects = () => {
             </Section>
             <Section>
               <ProjectsGridItem
-                id={'cv'}
-                title={'Сайт-резюме'}
-                labels={['React', 'Next.js']}
-                thumbnail={'/images/cv-thumbnail.png'}
+                id={"cv"}
+                title={"Сайт-резюме"}
+                labels={["React", "Next.js", "Typescript"]}
+                thumbnail={"/images/cv-thumbnail.png"}
               >
                 <p>Этот сайт с резюме и перечнем реализованных проектов</p>
               </ProjectsGridItem>
             </Section>
             <Section>
               <ProjectsGridItem
-                id={'todo'}
-                title={'To-Do CLI'}
-                labels={['Nim']}
+                id={"todo"}
+                title={"To-Do CLI"}
+                labels={["Nim"]}
                 // thumbnail={'/images/choco_manager_logo.jpg'}
               >
                 <p>Менеджер задач в консоли</p>
@@ -61,15 +62,15 @@ const Projects = () => {
           </SimpleGrid>
         </Section>
         <Section>
-          <Heading as={'h3'} variant={'sectionTitle'}>
+          <Heading as={"h3"} variant={"sectionTitle"}>
             Работа в команде
           </Heading>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
               <ProjectsGridItem
-                id={'star'}
-                title={'Student Archive'}
-                labels={['Java', 'Spark framework', 'JDBC', 'PostgreSQL']}
+                id={"star"}
+                title={"Student Archive"}
+                labels={["Java", "Spark framework", "JDBC", "PostgreSQL"]}
               >
                 <p>
                   Приложение для архивирования полезных учебных материалов

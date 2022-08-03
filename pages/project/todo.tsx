@@ -1,18 +1,21 @@
-import Layout from '../../components/layouts/article';
+import Layout from "../../components/layouts/article";
 import {
   Container,
   List,
   ListItem,
   Link,
   UnorderedList
-} from '@chakra-ui/react';
-import { Meta, Project, ProjectImage } from '../../components/project/project';
-import Paragraph from '../../components/paragraph';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+} from "@chakra-ui/react";
+import { Project } from "../../components/project/project";
+import Paragraph from "../../components/paragraph";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { ProjectImage } from "../../components/project/projectImage";
+import { Meta } from "../../components/project/meta";
+import React from "react";
 
 const Choco = () => {
   return (
-    <Layout title={'To-Do CLI'}>
+    <Layout title={"To-Do CLI"}>
       <Container my={5}>
         <Project>
           To-Do CLI <Meta>2022</Meta>
@@ -37,12 +40,12 @@ const Choco = () => {
         <List ml={4} my={4}>
           <ListItem my={2}>
             <Meta>Исходный код</Meta>
-            <Link href={'https://github.com/dadyarri/todo'}>
+            <Link href={"https://github.com/dadyarri/todo"}>
               https://github.com/dadyarri/todo <ExternalLinkIcon mx={1} />
             </Link>
           </ListItem>
         </List>
-        <ProjectImage src={'/images/todo-cli.png'} alt={'todo cli help'} />
+        <ProjectImage src={"/images/todo-cli.png"} alt={"todo cli help"} />
       </Container>
     </Layout>
   );

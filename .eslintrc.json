@@ -1,14 +1,22 @@
 {
   "root": true,
-  "extends": "next",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
-    "no-unused-vars": [
+    "@typescript-eslint/no-unused-vars": [
       "error",
       {
         "argsIgnorePattern": "^_",
         "varsIgnorePattern": "^_"
       }
     ],
-    "react/jsx-key": "off"
+    "react/jsx-key": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 }

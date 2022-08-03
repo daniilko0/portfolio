@@ -1,8 +1,15 @@
-import Head from 'next/head';
-import Navbar from '../navbar';
-import { Box, Container } from '@chakra-ui/react';
+import Head from "next/head";
+import Navbar from "../navbar";
+import { Box, Container } from "@chakra-ui/react";
+import React from "react";
+import { Router } from "next/router";
 
-const Main = ({ children, router }) => {
+type Props = {
+  children: React.ReactNode;
+  router: Router;
+};
+
+const Main = ({ children, router }: Props) => {
   return (
     <Box as="main" pb={8}>
       <Head>
