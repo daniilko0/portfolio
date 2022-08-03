@@ -1,4 +1,4 @@
-import { Link, useColorModeValue } from "@chakra-ui/react";
+import {Link, useColorModeValue} from "@chakra-ui/react";
 import NextLink from "next/link";
 import React from "react";
 
@@ -17,6 +17,7 @@ export const LinkItem = ({ href, path, children }: Props) => {
         p={2}
         bg={active ? "glassTeal" : undefined}
         color={active ? "#202023" : inactiveColor}
+        borderRadius={5}
       >
         {children}
       </Link>
