@@ -1,5 +1,11 @@
-import Image from "next/image";
-import { Box, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
+import {
+  Box,
+  LinkBox,
+  LinkOverlay,
+  Spinner,
+  Text,
+  Image
+} from "@chakra-ui/react";
 import React from "react";
 
 type Props = {
@@ -11,15 +17,17 @@ type Props = {
 
 export const GridItem = ({ children, title, href, thumbnail }: Props) => {
   return (
-    <Box w={"100%"}>
+    // @ts-ignore 2322
+    <Box w={"100%"} align={"center"}>
       <LinkBox cursor={"pointer"}>
         <Image
           src={thumbnail}
           alt={title}
           className={"grid-item-thumbnail"}
           loading={"lazy"}
-          width={900}
-          height={600}
+          fallback={<Spinner />}
+          width={300}
+          height={150}
         />
         <LinkOverlay href={href} target={"_blank"}>
           <Text mt={2}>{title}</Text>
