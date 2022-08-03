@@ -1,16 +1,10 @@
 import Layout from "../../components/layouts/article";
-import {
-  Container,
-  List,
-  ListItem,
-  Link,
-  UnorderedList
-} from "@chakra-ui/react";
-import { Project } from "../../components/project/project";
+import {Container, Link, List, ListItem, UnorderedList, useColorModeValue} from "@chakra-ui/react";
+import {Project} from "../../components/project/project";
 import Paragraph from "../../components/paragraph";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { ProjectImage } from "../../components/project/projectImage";
-import { Meta } from "../../components/project/meta";
+import {ExternalLinkIcon} from "@chakra-ui/icons";
+import {ProjectImage} from "../../components/project/projectImage";
+import {Meta} from "../../components/project/meta";
 import React from "react";
 
 const Choco = () => {
@@ -45,7 +39,19 @@ const Choco = () => {
             </Link>
           </ListItem>
         </List>
-        <ProjectImage src={"/images/todo-cli.png"} alt={"todo cli help"} />
+        <ProjectImage
+          srcs={useColorModeValue(
+            [
+              "/images/projects/todo/webp/todo-cli.webp",
+              "/images/projects/todo/png/todo-cli.png"
+            ],
+            [
+              "/images/projects/todo/webp/todo-cli.webp",
+              "/images/projects/todo/png/todo-cli.png"
+            ]
+          )}
+          alt={"todo cli help"}
+        />
       </Container>
     </Layout>
   );

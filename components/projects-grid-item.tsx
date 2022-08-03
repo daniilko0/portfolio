@@ -1,20 +1,13 @@
-import {
-  Box,
-  LinkBox,
-  LinkOverlay,
-  Text,
-  Image,
-  Spinner
-} from "@chakra-ui/react";
+import {Box, Image, LinkBox, LinkOverlay, Spinner, Text} from "@chakra-ui/react";
 import NextLink from "next/link";
-import { Meta } from "./project/meta";
+import {Meta} from "./project/meta";
 import React from "react";
 
 type Props = {
   children: React.ReactNode;
   id: string;
   title: string;
-  thumbnail?: string;
+  thumbnails?: [string, string];
   labels: string[];
 };
 
@@ -22,7 +15,7 @@ export const ProjectsGridItem = ({
   children,
   id,
   title,
-  thumbnail,
+  thumbnails,
   labels
 }: Props) => {
   return (
@@ -31,7 +24,14 @@ export const ProjectsGridItem = ({
       <NextLink href={`/project/${id}`}>
         <LinkBox cursor={"pointer"}>
           <Image
-            src={thumbnail ? thumbnail : "/images/placeholder.png"}
+            src={
+              thumbnails
+                ? thumbnails[0]
+                : "/images/common/webp/placeholder.webp"
+            }
+            fallbackSrc={
+              thumbnails ? thumbnails[1] : "/images/common/png/placeholder.png"
+            }
             alt={title}
             className={"grid-item-thumbnail"}
             loading={"lazy"}

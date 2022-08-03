@@ -1,6 +1,6 @@
 import Layout from "../components/layouts/article";
-import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
-import { GridItem } from "../components/grid-item";
+import {Container, Heading, SimpleGrid} from "@chakra-ui/react";
+import {GridItem} from "../components/grid-item";
 import React from "react";
 
 const Posts = () => {
@@ -14,14 +14,20 @@ const Posts = () => {
           <GridItem
             title={"Control"}
             href={"https://teletype.in/@yadevblog/control"}
-            thumbnail={"/images/control-review.png"}
+            thumbnails={[
+              "/images/posts/webp/control-review.webp",
+              "/images/posts/jpg/control-review.jpg"
+            ]}
           >
             Немного запоздалого мнения о Control (2019)
           </GridItem>
           <GridItem
             title={"Второй мозг. Reinvented edition"}
             href={"https://teletype.in/@yadevblog/second-mind-ed2"}
-            thumbnail={"/images/second-mind-ed2.png"}
+            thumbnails={[
+              "/images/posts/webp/second-mind-ed2.webp",
+              "/images/posts/png/second-mind-ed2.png"
+            ]}
           >
             Как я переделал свой воркспейс в Notion
           </GridItem>

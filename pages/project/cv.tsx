@@ -1,10 +1,10 @@
 import Layout from "../../components/layouts/article";
-import { Container, Link, List, ListItem } from "@chakra-ui/react";
-import { Project } from "../../components/project/project";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import {Container, Link, List, ListItem, useColorModeValue} from "@chakra-ui/react";
+import {Project} from "../../components/project/project";
+import {ExternalLinkIcon} from "@chakra-ui/icons";
 import Paragraph from "../../components/paragraph";
-import { ProjectImage } from "../../components/project/projectImage";
-import { Meta } from "../../components/project/meta";
+import {ProjectImage} from "../../components/project/projectImage";
+import {Meta} from "../../components/project/meta";
 import React from "react";
 
 const Cv = () => (
@@ -28,7 +28,19 @@ const Cv = () => (
           <Link href={"https://dadyarri.ru"}>https://dadyarri.ru</Link>
         </ListItem>
       </List>
-      <ProjectImage src={"/images/cv-home-page.png"} alt={"cv home page"} />
+      <ProjectImage
+        srcs={useColorModeValue(
+          [
+            "/images/projects/cv/webp/light/cv-home-page.webp",
+            "/images/projects/cv/png/light/cv-home-page.png"
+          ],
+          [
+            "/images/projects/cv/webp/dark/cv-home-page.webp",
+            "/images/projects/cv/png/dark/cv-home-page.png"
+          ]
+        )}
+        alt={"cv home page"}
+      />
     </Container>
   </Layout>
 );

@@ -1,11 +1,20 @@
-import { Image } from "@chakra-ui/react";
+import {Image} from "@chakra-ui/react";
 import React from "react";
 
 type Props = {
-  src: string;
+  srcs: [string, string];
   alt: string;
 };
 
-export const ProjectImage = ({ src, alt }: Props) => (
-  <Image borderRadius={"lg"} w={"full"} src={src} alt={alt} mb={4} />
-);
+export const ProjectImage = ({ srcs, alt }: Props) => {
+  return (
+    <Image
+      borderRadius={"lg"}
+      w={"full"}
+      src={srcs[0]}
+      fallbackSrc={srcs[1]}
+      alt={alt}
+      mb={4}
+    />
+  );
+};

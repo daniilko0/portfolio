@@ -1,7 +1,7 @@
-import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import {Container, Heading, SimpleGrid, useColorModeValue} from "@chakra-ui/react";
 import Section from "../components/section";
 import Layout from "../components/layouts/article";
-import { ProjectsGridItem } from "../components/projects-grid-item";
+import {ProjectsGridItem} from "../components/projects-grid-item";
 import React from "react";
 
 const Projects = () => {
@@ -32,7 +32,10 @@ const Projects = () => {
                   "VK API",
                   "Telegram API"
                 ]}
-                thumbnail={"/images/choco_manager_logo.jpg"}
+                thumbnails={[
+                  "/images/projects/choco/webp/common/choco-logo.webp",
+                  "/images/projects/choco/jpg/common/choco-logo.jpg"
+                ]}
               >
                 <p>
                   Система работы с клиентами и остатками в интернет-магазине
@@ -44,7 +47,16 @@ const Projects = () => {
                 id={"cv"}
                 title={"Сайт-резюме"}
                 labels={["React", "Next.js", "Typescript"]}
-                thumbnail={"/images/cv-thumbnail.png"}
+                thumbnails={useColorModeValue(
+                  [
+                    "/images/projects/cv/webp/light/cv-thumbnail.webp",
+                    "/images/projects/choco/png/light/cv-thumbnail.png"
+                  ],
+                  [
+                    "/images/projects/cv/webp/dark/cv-thumbnail.webp",
+                    "/images/projects/choco/png/dark/cv-thumbnail.png"
+                  ]
+                )}
               >
                 <p>Этот сайт с резюме и перечнем реализованных проектов</p>
               </ProjectsGridItem>

@@ -48,7 +48,8 @@ const Page = () => {
               height={100}
               display={"inline-block"}
               borderRadius={"full"}
-              src={"/images/avatar.jpeg"}
+              src={"/images/index/webp/avatar.webp"}
+              fallbackSrc={"/images/index/jpg/avatar.jpg"}
               marginTop={3}
             />
           </Box>
