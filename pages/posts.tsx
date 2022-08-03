@@ -13,7 +13,7 @@ const Posts = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <GridItem
             title={"Control"}
-            href={"https://teletype.in/@yadevblog/control"}
+            href={"https://blog.dadyarri.ru/control"}
             thumbnails={[
               "/images/posts/webp/control-review.webp",
               "/images/posts/jpg/control-review.jpg"
@@ -23,7 +23,7 @@ const Posts = () => {
           </GridItem>
           <GridItem
             title={"Второй мозг. Reinvented edition"}
-            href={"https://teletype.in/@yadevblog/second-mind-ed2"}
+            href={"https://blog.dadyarri.ru/second-mind-ed2"}
             thumbnails={[
               "/images/posts/webp/second-mind-ed2.webp",
               "/images/posts/png/second-mind-ed2.png"
