@@ -3,28 +3,28 @@ import {
   Button,
   Container,
   Heading,
+  HStack,
   Image,
+  Link,
   List,
   ListItem,
-  Link,
   Tag,
-  TagLeftIcon,
   TagLabel,
+  TagLeftIcon,
   Tooltip,
-  HStack,
   VStack
 } from "@chakra-ui/react";
 
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
-import { ChevronRightIcon, Icon } from "@chakra-ui/icons";
+import {ChevronRightIcon, Icon} from "@chakra-ui/icons";
 import NextLink from "next/link";
-import { BioSection, BioYear } from "../components/bio";
+import {BioSection, BioYear} from "../components/bio";
 import Layout from "../components/layouts/article";
-import { IoLogoGithub, IoLogoVk } from "react-icons/io5";
-import { BsTelegram } from "react-icons/bs";
-import { DiDotnet, DiPython } from "react-icons/di";
-import { SiNim, SiGnubash, SiDocker } from "react-icons/si";
+import {IoLogoGithub, IoLogoVk} from "react-icons/io5";
+import {BsTelegram} from "react-icons/bs";
+import {DiDotnet, DiPython} from "react-icons/di";
+import {SiDocker, SiGnubash, SiNim} from "react-icons/si";
 import React from "react";
 
 const Page = () => {
@@ -74,7 +74,7 @@ const Page = () => {
           <Paragraph>
             Начинающий бэкенд-разработчик и тех-лид, изучаю .NET.
           </Paragraph>
-          <Button rightIcon={<ChevronRightIcon />} colorScheme={"teal"} my={3}>
+          <Button rightIcon={<ChevronRightIcon />} colorScheme={"blue"} my={3}>
             <NextLink href={"/projects"}>Проекты</NextLink>
           </Button>
         </Section>
@@ -90,7 +90,7 @@ const Page = () => {
                   size={"lg"}
                   key={"dotnet"}
                   variant={"subtle"}
-                  colorScheme={"teal"}
+                  colorScheme={"blue"}
                 >
                   <TagLeftIcon boxSize={"20px"} as={DiDotnet} />
                   <TagLabel>dotnet</TagLabel>
@@ -102,7 +102,7 @@ const Page = () => {
                   size={"lg"}
                   key={"python"}
                   variant={"subtle"}
-                  colorScheme={"teal"}
+                  colorScheme={"blue"}
                 >
                   <TagLeftIcon boxSize={"20px"} as={DiPython} />
                   <TagLabel>python</TagLabel>
@@ -112,7 +112,7 @@ const Page = () => {
                 size={"lg"}
                 key={"nim"}
                 variant={"subtle"}
-                colorScheme={"teal"}
+                colorScheme={"blue"}
               >
                 <TagLeftIcon boxSize={"20px"} as={SiNim} />
                 <TagLabel>nim</TagLabel>
@@ -124,7 +124,7 @@ const Page = () => {
                   size={"lg"}
                   key={"bash"}
                   variant={"subtle"}
-                  colorScheme={"teal"}
+                  colorScheme={"blue"}
                 >
                   <TagLeftIcon boxSize={"20px"} as={SiGnubash} />
                   <TagLabel>bash</TagLabel>
@@ -135,7 +135,7 @@ const Page = () => {
                     size={"lg"}
                     key={"docker"}
                     variant={"subtle"}
-                    colorScheme={"teal"}
+                    colorScheme={"blue"}
                   >
                     <TagLeftIcon boxSize={"20px"} as={SiDocker} />
                     <TagLabel>docker</TagLabel>
@@ -155,7 +155,7 @@ const Page = () => {
               <Link href={"https://github.com/dadyarri"} target={"_blank"}>
                 <Button
                   variant={"ghost"}
-                  colorScheme={"teal"}
+                  colorScheme={"blue"}
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
                   @dadyarri
@@ -166,7 +166,7 @@ const Page = () => {
               <Link href={"https://vk.com/dadyarri"} target={"_blank"}>
                 <Button
                   variant={"ghost"}
-                  colorScheme={"teal"}
+                  colorScheme={"blue"}
                   leftIcon={<Icon as={IoLogoVk} />}
                 >
                   @dadyarri
@@ -177,7 +177,7 @@ const Page = () => {
               <Link href={"https://t.me/dadyarri"} target={"_blank"}>
                 <Button
                   variant={"ghost"}
-                  colorScheme={"teal"}
+                  colorScheme={"blue"}
                   leftIcon={<Icon as={BsTelegram} />}
                 >
                   @dadyarri
@@ -188,7 +188,7 @@ const Page = () => {
               <Link href={"https://t.me/yadevblog"} target={"_blank"}>
                 <Button
                   variant={"ghost"}
-                  colorScheme={"teal"}
+                  colorScheme={"blue"}
                   leftIcon={<Icon as={BsTelegram} />}
                 >
                   @yadevblog

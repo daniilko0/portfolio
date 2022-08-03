@@ -1,5 +1,5 @@
-import { mode, StyleFunctionProps } from "@chakra-ui/theme-tools";
-import { extendTheme } from "@chakra-ui/react";
+import {mode, StyleFunctionProps} from "@chakra-ui/theme-tools";
+import {extendTheme} from "@chakra-ui/react";
 
 const theme = extendTheme({
   config: {
@@ -16,7 +16,7 @@ const theme = extendTheme({
   components: {
     Link: {
       baseStyle: (props: StyleFunctionProps) => ({
-        color: mode("teal.300", "teal.500")(props),
+        color: mode("blue.300", "blue.500")(props),
         textUnderlineOffset: 3
       })
     },

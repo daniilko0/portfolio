@@ -15,8 +15,8 @@ export const LinkItem = ({ href, path, children }: Props) => {
     <NextLink href={href}>
       <Link
         p={2}
-        bg={active ? "glassTeal" : undefined}
-        color={active ? "#202023" : inactiveColor}
+        bg={active ? "blue.800" : undefined}
+        color={active ? "blue.50" : inactiveColor}
         borderRadius={5}
       >
         {children}

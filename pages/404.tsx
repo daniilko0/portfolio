@@ -1,12 +1,5 @@
 import NextLink from "next/link";
-import {
-  Box,
-  Heading,
-  Text,
-  Container,
-  Divider,
-  Button
-} from "@chakra-ui/react";
+import {Box, Button, Container, Divider, Heading, Text} from "@chakra-ui/react";
 import Layout from "../components/layouts/article";
 import React from "react";
 
@@ -19,7 +12,7 @@ const NotFound = () => {
         <Divider my={6} />
         <Box my={6}>
           <NextLink href={"/"}>
-            <Button colorScheme={"teal"}>На главную</Button>
+            <Button colorScheme={"blue"}>На главную</Button>
           </NextLink>
         </Box>
       </Container>
