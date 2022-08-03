@@ -1,12 +1,15 @@
-import Layout from '../../components/layouts/article';
-import { Container, List, ListItem, Link } from '@chakra-ui/react';
-import { Meta, Project, ProjectImage } from '../../components/project/project';
-import Paragraph from '../../components/paragraph';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import Layout from "../../components/layouts/article";
+import { Container, List, ListItem, Link } from "@chakra-ui/react";
+import { Project } from "../../components/project/project";
+import Paragraph from "../../components/paragraph";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { ProjectImage } from "../../components/project/projectImage";
+import { Meta } from "../../components/project/meta";
+import React from "react";
 
 const Star = () => {
   return (
-    <Layout title={'Student Archive'}>
+    <Layout title={"Student Archive"}>
       <Container my={5}>
         <Project>
           Student Archive <Meta>2022</Meta>
@@ -25,14 +28,14 @@ const Star = () => {
         <List ml={4} my={4}>
           <ListItem my={2}>
             <Meta>Исходный код</Meta>
-            <Link href={'https://github.com/student-archive'}>
+            <Link href={"https://github.com/student-archive"}>
               https://github.com/student-archive <ExternalLinkIcon mx={1} />
             </Link>
           </ListItem>
         </List>
         <ProjectImage
-          src={'/images/star-endpoint-call.png'}
-          alt={'star endpoint call'}
+          src={"/images/star-endpoint-call.png"}
+          alt={"star endpoint call"}
         />
       </Container>
     </Layout>
