@@ -17,7 +17,6 @@
       }
     ],
     "react/jsx-key": "off",
-    "@typescript-eslint/ban-ts-comment" : "off"
-
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 }
