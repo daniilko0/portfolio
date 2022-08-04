@@ -42,12 +42,12 @@ const Choco = () => {
         <ProjectImage
           srcs={useColorModeValue(
             [
-              "/images/projects/todo/webp/todo-cli.webp",
-              "/images/projects/todo/png/todo-cli.png"
+              "/images/projects/todo/webp/light/todo-cli.webp",
+              "/images/projects/todo/png/light/todo-cli.png"
             ],
             [
-              "/images/projects/todo/webp/todo-cli.webp",
-              "/images/projects/todo/png/todo-cli.png"
+              "/images/projects/todo/webp/dark/todo-cli.webp",
+              "/images/projects/todo/png/dark/todo-cli.png"
             ]
           )}
           alt={"todo cli help"}
