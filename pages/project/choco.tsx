@@ -3,7 +3,7 @@ import {Container, Link, List, ListItem, useColorModeValue} from "@chakra-ui/rea
 import {Project} from "../../components/project/project";
 import Paragraph from "../../components/paragraph";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {ProjectImage} from "../../components/project/projectImage";
+import {ProjectImage} from "../../components/project/project-image";
 import {Meta} from "../../components/project/meta";
 import React from "react";
 
