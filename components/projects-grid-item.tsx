@@ -47,7 +47,9 @@ export const ProjectsGridItem = ({
           <Text fontSize={14}>{children}</Text>
         </LinkBox>
       </NextLink>
-      {labels ? labels.map((label, _) => <Meta>{label}</Meta>) : null}
+      {labels
+        ? labels.map((label, _) => <Meta key={label}>{label}</Meta>)
+        : null}
     </Box>
   );
 };

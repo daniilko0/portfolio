@@ -1,5 +1,4 @@
 import NextLink from "next/link";
-import Link from "next/link";
 import {
   Box,
   Container,
@@ -13,10 +12,11 @@ import {
   Stack,
   useColorModeValue
 } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import {HamburgerIcon} from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
-import { LinkItem } from "./link-item";
+import {LinkItem} from "./link-item";
 import React from "react";
+import ChakraNextLink from "./chakra-next-link";
 
 type Props = {
   path: string;
@@ -75,21 +75,15 @@ const Navbar = (props: Props) => {
                 aria-label={"Options"}
               ></MenuButton>
               <MenuList>
-                <NextLink href={"/"} passHref>
-                  <Link href={""}>
+                <ChakraNextLink href={"/"}>
                     <MenuItem>Обо мне</MenuItem>
-                  </Link>
-                </NextLink>
-                <NextLink href={"/projects"} passHref>
-                  <Link href={""}>
+                </ChakraNextLink>
+                <ChakraNextLink href={"/projects"}>
                     <MenuItem>Проекты</MenuItem>
-                  </Link>
-                </NextLink>
-                <NextLink href={"/posts"} passHref>
-                  <Link href={""}>
+                </ChakraNextLink>
+                <ChakraNextLink href={"/posts"}>
                     <MenuItem>Публикации</MenuItem>
-                  </Link>
-                </NextLink>
+                </ChakraNextLink>
               </MenuList>
             </Menu>
           </Box>
