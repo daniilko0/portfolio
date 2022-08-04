@@ -37,9 +37,7 @@ const Projects = () => {
                   "/images/projects/choco/jpg/common/choco-logo.jpg"
                 ]}
               >
-                <p>
-                  Система работы с клиентами и остатками в интернет-магазине
-                </p>
+                Система работы с клиентами и остатками в интернет-магазине
               </ProjectsGridItem>
             </Section>
             <Section>
@@ -58,7 +56,7 @@ const Projects = () => {
                   ]
                 )}
               >
-                <p>Этот сайт с резюме и перечнем реализованных проектов</p>
+                Этот сайт с резюме и перечнем реализованных проектов
               </ProjectsGridItem>
             </Section>
             <Section>
@@ -68,7 +66,7 @@ const Projects = () => {
                 labels={["Nim"]}
                 // thumbnail={'/images/choco_manager_logo.jpg'}
               >
-                <p>Менеджер задач в консоли</p>
+                Менеджер задач в консоли
               </ProjectsGridItem>
             </Section>
           </SimpleGrid>
@@ -84,10 +82,8 @@ const Projects = () => {
                 title={"Student Archive"}
                 labels={["Java", "Spark framework", "JDBC", "PostgreSQL"]}
               >
-                <p>
-                  Приложение для архивирования полезных учебных материалов
-                  (лабораторные работы, методические материалы и пр.)
-                </p>
+                Приложение для архивирования полезных учебных материалов
+                (лабораторные работы, методические материалы и пр.)
               </ProjectsGridItem>
             </Section>
           </SimpleGrid>

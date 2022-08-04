@@ -19,18 +19,18 @@ const Choco = () => {
         </Paragraph>
         <Paragraph>
           <b>Функционал:</b>
-          <UnorderedList ml={10}>
-            <ListItem>Добавление задачи</ListItem>
-            <ListItem>Удаление задачи</ListItem>
-            <ListItem>Установка статуса &quot;Выполнено&quot; задаче</ListItem>
-            <ListItem>Отображение списка задач</ListItem>
-            <ListItem>
-              TODO: Создание, удаление, назначение тегов задачам
-            </ListItem>
-            <ListItem>TODO: Фильтр списка задач</ListItem>
-            <ListItem>TODO: Виджет для zsh темы powerline10k</ListItem>
-          </UnorderedList>
         </Paragraph>
+        <UnorderedList ml={10}>
+          <ListItem>Добавление задачи</ListItem>
+          <ListItem>Удаление задачи</ListItem>
+          <ListItem>Установка статуса &quot;Выполнено&quot; задаче</ListItem>
+          <ListItem>Отображение списка задач</ListItem>
+          <ListItem>
+            TODO: Создание, удаление, назначение тегов задачам
+          </ListItem>
+          <ListItem>TODO: Фильтр списка задач</ListItem>
+          <ListItem>TODO: Виджет для zsh темы powerline10k</ListItem>
+        </UnorderedList>
         <List ml={4} my={4}>
           <ListItem my={2}>
             <Meta>Исходный код</Meta>

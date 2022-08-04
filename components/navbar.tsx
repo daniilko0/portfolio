@@ -76,13 +76,13 @@ const Navbar = (props: Props) => {
               ></MenuButton>
               <MenuList>
                 <ChakraNextLink href={"/"}>
-                    <MenuItem>Обо мне</MenuItem>
+                  <MenuItem>Обо мне</MenuItem>
                 </ChakraNextLink>
                 <ChakraNextLink href={"/projects"}>
-                    <MenuItem>Проекты</MenuItem>
+                  <MenuItem>Проекты</MenuItem>
                 </ChakraNextLink>
                 <ChakraNextLink href={"/posts"}>
-                    <MenuItem>Публикации</MenuItem>
+                  <MenuItem>Публикации</MenuItem>
                 </ChakraNextLink>
               </MenuList>
             </Menu>
