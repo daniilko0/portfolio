@@ -1,7 +1,8 @@
 import Layout from "../components/layouts/article";
-import {Container, Heading, SimpleGrid} from "@chakra-ui/react";
+import {Button, Container, Heading, LinkOverlay, SimpleGrid} from "@chakra-ui/react";
 import {GridItem} from "../components/grid-item";
 import React from "react";
+import {ChevronRightIcon} from "@chakra-ui/icons";
 
 const Posts = () => {
   return (
@@ -42,6 +43,10 @@ const Posts = () => {
             Как я переделал свой воркспейс в Notion
           </GridItem>
         </SimpleGrid>
+        <Button rightIcon={<ChevronRightIcon />} colorScheme={"blue"} my={3}>
+          Все публикации
+          <LinkOverlay href={"https://blog.dadyarri.ru"} target={"_blank"} />
+        </Button>
       </Container>
     </Layout>
   );
