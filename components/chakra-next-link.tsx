@@ -5,7 +5,10 @@ import React, {LegacyRef} from "react";
 type ChakraLinkAndNextProps = ChakraLinkProps & LinkProps;
 
 const ChakraNextLink = React.forwardRef(
-  ({ href, children, ...props }: ChakraLinkAndNextProps, ref: LegacyRef<HTMLAnchorElement>) => {
+  (
+    { href, children, ...props }: ChakraLinkAndNextProps,
+    ref: LegacyRef<HTMLAnchorElement>
+  ) => {
     return (
       <Link href={href} passHref>
         <ChakraLink ref={ref} {...props}>
