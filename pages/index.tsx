@@ -1,18 +1,18 @@
 import {
-    Box,
-    Button,
-    Container,
-    Heading,
-    HStack,
-    Image,
-    Link,
-    List,
-    ListItem,
-    Tag,
-    TagLabel,
-    TagLeftIcon,
-    Tooltip,
-    VStack
+  Box,
+  Button,
+  Container,
+  Heading,
+  HStack,
+  Image,
+  Link,
+  List,
+  ListItem,
+  Tag,
+  TagLabel,
+  TagLeftIcon,
+  Tooltip,
+  VStack
 } from "@chakra-ui/react";
 
 import Section from "../components/section";
