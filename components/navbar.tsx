@@ -1,16 +1,16 @@
 import NextLink from "next/link";
 import {
-    Box,
-    Container,
-    Flex,
-    Heading,
-    IconButton,
-    Menu,
-    MenuButton,
-    MenuItem,
-    MenuList,
-    Stack,
-    useColorModeValue
+  Box,
+  Container,
+  Flex,
+  Heading,
+  IconButton,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Stack,
+  useColorModeValue
 } from "@chakra-ui/react";
 import {HamburgerIcon} from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
@@ -62,6 +62,9 @@ const Navbar = (props: Props) => {
           <LinkItem href={"/posts"} path={path}>
             Публикации
           </LinkItem>
+          <LinkItem href={"https://cv.dadyarri.ru"} path={path}>
+            Резюме
+          </LinkItem>
         </Stack>
         {/*@ts-ignore 2322*/}
         <Box flex={1} align={"right"}>
@@ -83,6 +86,9 @@ const Navbar = (props: Props) => {
                 </ChakraNextLink>
                 <ChakraNextLink href={"/posts"}>
                   <MenuItem>Публикации</MenuItem>
+                </ChakraNextLink>
+                <ChakraNextLink href={"https://cv.dadyarri.ru"}>
+                  <MenuItem>Резюме</MenuItem>
                 </ChakraNextLink>
               </MenuList>
             </Menu>
