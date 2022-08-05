@@ -1,12 +1,13 @@
 import NextLink from "next/link";
-import {Box, Button, Container, Divider, Heading, Text} from "@chakra-ui/react";
+import {Box, Button, Divider, Heading, Text} from "@chakra-ui/react";
 import Layout from "../components/layouts/article";
 import React from "react";
+import Section from "../components/section";
 
 const NotFound = () => {
   return (
     <Layout title={"404"}>
-      <Container>
+      <Section>
         <Heading as={"h1"}>Страница не найдена</Heading>
         <Text>Запрашиваемая страница не существует</Text>
         <Divider my={6} />
@@ -15,7 +16,7 @@ const NotFound = () => {
             <Button colorScheme={"blue"}>На главную</Button>
           </NextLink>
         </Box>
-      </Container>
+      </Section>
     </Layout>
   );
 };
