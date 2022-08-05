@@ -31,29 +31,31 @@ const Page = () => {
   return (
     <Layout title={"Главная"}>
       <Container my={5}>
-        <Box display={{ md: "flex" }}>
-          <Box flexGrow={1}>
-            <Heading as="h2" variant="page-title">
-              Даниил Голубев
-            </Heading>
-            <p>Бэкенд-разработчик, фанат Jetbrains, Linux-энтузиаст</p>
+        <Section delay={0}>
+          <Box display={{ md: "flex" }}>
+            <Box flexGrow={1}>
+              <Heading as="h2" variant="page-title">
+                Даниил Голубев
+              </Heading>
+              <p>Бэкенд-разработчик, фанат Jetbrains, Linux-энтузиаст</p>
+            </Box>
+            <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+              <Image
+                  alt={"avatar"}
+                  borderColor={"whiteAlpha.800"}
+                  borderWidth={2}
+                  borderStyle={"solid"}
+                  width={100}
+                  height={100}
+                  display={"inline-block"}
+                  borderRadius={"full"}
+                  src={"/images/index/webp/avatar.webp"}
+                  fallbackSrc={"/images/index/jpg/avatar.jpg"}
+                  marginTop={3}
+              />
+            </Box>
           </Box>
-          <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-            <Image
-              alt={"avatar"}
-              borderColor={"whiteAlpha.800"}
-              borderWidth={2}
-              borderStyle={"solid"}
-              width={100}
-              height={100}
-              display={"inline-block"}
-              borderRadius={"full"}
-              src={"/images/index/webp/avatar.webp"}
-              fallbackSrc={"/images/index/jpg/avatar.jpg"}
-              marginTop={3}
-            />
-          </Box>
-        </Box>
+        </Section>
         <Section delay={0.1}>
           <Heading variant={"sectionTitle"} as={"h3"}>
             Образование и опыт
@@ -80,7 +82,7 @@ const Page = () => {
           </Button>
         </Section>
 
-        <Section>
+        <Section delay={0.3}>
           <Heading variant={"sectionTitle"} as={"h3"}>
             Навыки
           </Heading>
@@ -147,7 +149,7 @@ const Page = () => {
           </VStack>
         </Section>
 
-        <Section delay={0.3}>
+        <Section delay={0.4}>
           <Heading variant={"sectionTitle"} as={"h3"}>
             Я в интернете
           </Heading>
