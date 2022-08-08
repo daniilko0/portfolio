@@ -23,7 +23,7 @@ import {BioSection, BioYear} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {IoLogoGithub, IoLogoVk} from "react-icons/io5";
 import {BsTelegram} from "react-icons/bs";
-import {DiDotnet, DiPython} from "react-icons/di";
+import {DiDotnet, DiGit, DiLinux, DiPostgresql, DiPython} from "react-icons/di";
 import {SiDocker, SiGnubash, SiNim} from "react-icons/si";
 import React from "react";
 
@@ -120,9 +120,29 @@ const Page = () => {
                 <TagLeftIcon boxSize={"20px"} as={SiNim} />
                 <TagLabel>nim</TagLabel>
               </Tag>
+              <Tag
+                  size={"lg"}
+                  key={"git"}
+                  variant={"subtle"}
+                  colorScheme={"blue"}
+              >
+                <TagLeftIcon boxSize={"20px"} as={DiGit} />
+                <TagLabel>git</TagLabel>
+              </Tag>
             </HStack>
             <VStack>
               <HStack>
+                <Tooltip hasArrow label={"fedora, arch, ubuntu"} placement={"bottom"}>
+                  <Tag
+                      size={"lg"}
+                      key={"linux"}
+                      variant={"subtle"}
+                      colorScheme={"blue"}
+                  >
+                    <TagLeftIcon boxSize={"20px"} as={DiLinux} />
+                    <TagLabel>linux</TagLabel>
+                  </Tag>
+                </Tooltip>
                 <Tag
                   size={"lg"}
                   key={"bash"}
@@ -142,6 +162,17 @@ const Page = () => {
                   >
                     <TagLeftIcon boxSize={"20px"} as={SiDocker} />
                     <TagLabel>docker</TagLabel>
+                  </Tag>
+                </Tooltip>
+                <Tooltip hasArrow label={"+ pl/pgsql"} placement={"bottom"}>
+                  <Tag
+                      size={"lg"}
+                      key={"postgres"}
+                      variant={"subtle"}
+                      colorScheme={"blue"}
+                  >
+                    <TagLeftIcon boxSize={"20px"} as={DiPostgresql} />
+                    <TagLabel>postgresql</TagLabel>
                   </Tag>
                 </Tooltip>
               </HStack>
