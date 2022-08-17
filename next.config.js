@@ -1,5 +1,9 @@
 const options = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  swcMinify: true,
+  compiler: {
+    styledComponents: true
+  }
 };
 
 module.exports = options;
