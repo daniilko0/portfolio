@@ -13,6 +13,16 @@ const Posts = () => {
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <GridItem
+              title={"React"}
+              href={"https://blog.dadyarri.ru/react"}
+              thumbnails={[
+                "/images/projects/cv/webp/dark/cv-thumbnail.webp",
+                "/images/projects/cv/png/dark/cv-thumbnail.png"
+              ]}
+          >
+            Возвращение к современному фронтенду с неожиданным выводом
+          </GridItem>
+          <GridItem
               title={"Nim"}
               href={"https://blog.dadyarri.ru/nim"}
               thumbnails={[
