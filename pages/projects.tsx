@@ -71,10 +71,10 @@ const Projects = () => {
             </Section>
             <Section>
               <ProjectsGridItem
-                  id={"link-shortener"}
-                  title={"Сокращатель ссылок"}
-                  labels={["Typescript", "React", "Next.js", "Redis"]}
-                  // thumbnail={'/images/choco_manager_logo.jpg'}
+                id={"link-shortener"}
+                title={"Сокращатель ссылок"}
+                labels={["Typescript", "React", "Next.js", "Redis"]}
+                // thumbnail={'/images/choco_manager_logo.jpg'}
               >
                 Простенький сервис для сокращения ссылок
               </ProjectsGridItem>

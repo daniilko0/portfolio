@@ -7,14 +7,7 @@ type Props = {
 
 export const Meta = ({ children }: Props) => {
   return (
-    <Badge
-      colorScheme={"blue"}
-      variant={"outline"}
-      ml={1}
-      mr={3}
-      my={1}
-      p={1}
-    >
+    <Badge colorScheme={"blue"} variant={"outline"} ml={1} mr={3} my={1} p={1}>
       {children}
     </Badge>
   );

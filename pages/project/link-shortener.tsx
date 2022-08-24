@@ -20,21 +20,22 @@ const LinkShortener = () => (
         <ListItem my={2}>
           <Meta>Исходный код</Meta>
           <Link href={"https://github.com/dadyarri/link-shortener"}>
-            https://github.com/dadyarri/link-shortener <ExternalLinkIcon mx={1} />
+            https://github.com/dadyarri/link-shortener{" "}
+            <ExternalLinkIcon mx={1} />
           </Link>
         </ListItem>
         <ListItem my={2}>
           <Meta>Ссылка на сайт</Meta>
-          <Link href={"https://link.dadyarri.ru"}>https://link.dadyarri.ru</Link>
+          <Link href={"https://link.dadyarri.ru"}>
+            https://link.dadyarri.ru
+          </Link>
         </ListItem>
       </List>
       <ProjectImage
-        srcs={
-          [
-            "/images/projects/ls/webp/dark/ls-home-page.webp",
-            "/images/projects/ls/png/dark/ls-home-page.png"
-          ]
-        }
+        srcs={[
+          "/images/projects/ls/webp/dark/ls-home-page.webp",
+          "/images/projects/ls/png/dark/ls-home-page.png"
+        ]}
         alt={"ls home page"}
       />
     </Container>
