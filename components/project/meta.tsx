@@ -1,4 +1,4 @@
-import { Badge } from "@chakra-ui/react";
+import {Badge} from "@chakra-ui/react";
 import React from "react";
 
 type Props = {
@@ -6,22 +6,9 @@ type Props = {
 };
 
 export const Meta = ({ children }: Props) => {
-  const colorSchemas = [
-    "red",
-    "orange",
-    "yellow",
-    "green",
-    "teal",
-    "blue",
-    "cyan",
-    "purple",
-    "pink"
-  ];
   return (
     <Badge
-      colorScheme={
-        colorSchemas[Math.floor(Math.random() * colorSchemas.length)]
-      }
+      colorScheme={"blue"}
       variant={"outline"}
       ml={1}
       mr={3}
