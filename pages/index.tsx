@@ -3,16 +3,15 @@ import {
   Button,
   Container,
   Heading,
-  HStack,
   Image,
   Link,
   List,
   ListItem,
+  SimpleGrid,
   Tag,
   TagLabel,
   TagLeftIcon,
-  Tooltip,
-  VStack
+  Tooltip
 } from "@chakra-ui/react";
 
 import Section from "../components/section";
@@ -41,17 +40,17 @@ const Page = () => {
             </Box>
             <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
               <Image
-                  alt={"avatar"}
-                  borderColor={"whiteAlpha.800"}
-                  borderWidth={2}
-                  borderStyle={"solid"}
-                  width={100}
-                  height={100}
-                  display={"inline-block"}
-                  borderRadius={"full"}
-                  src={"/images/index/webp/avatar.webp"}
-                  fallbackSrc={"/images/index/jpg/avatar.jpg"}
-                  marginTop={3}
+                alt={"avatar"}
+                borderColor={"whiteAlpha.800"}
+                borderWidth={2}
+                borderStyle={"solid"}
+                width={100}
+                height={100}
+                display={"inline-block"}
+                borderRadius={"full"}
+                src={"/images/index/webp/avatar.webp"}
+                fallbackSrc={"/images/index/jpg/avatar.jpg"}
+                marginTop={3}
               />
             </Box>
           </Box>
@@ -86,110 +85,117 @@ const Page = () => {
           <Heading variant={"sectionTitle"} as={"h3"}>
             Навыки
           </Heading>
-          <VStack>
-            <HStack>
-              <Tooltip hasArrow label={"ef core, asp.net"} placement={"top"}>
-                <Tag
-                  size={"lg"}
-                  key={"dotnet"}
-                  variant={"subtle"}
-                  colorScheme={"blue"}
-                >
-                  <TagLeftIcon boxSize={"20px"} as={DiDotnet} />
-                  <TagLabel>dotnet</TagLabel>
-                </Tag>
-              </Tooltip>
-
-              <Tooltip hasArrow label={"fastapi, tortoise"} placement={"top"}>
-                <Tag
-                  size={"lg"}
-                  key={"python"}
-                  variant={"subtle"}
-                  colorScheme={"blue"}
-                >
-                  <TagLeftIcon boxSize={"20px"} as={DiPython} />
-                  <TagLabel>python</TagLabel>
-                </Tag>
-              </Tooltip>
-
-              <Tooltip hasArrow label={"next.js, react"} placement={"top"}>
-                <Tag
-                  size={"lg"}
-                  key={"typescript"}
-                  variant={"subtle"}
-                  colorScheme={"blue"}
-                >
-                  <TagLeftIcon boxSize={"20px"} as={SiTypescript} />
-                  <TagLabel>typescript</TagLabel>
-                </Tag>
-              </Tooltip>
+          <SimpleGrid minChildWidth={"123px"} spacingX={1} spacingY={2}>
+            <Tooltip hasArrow label={"ef core, asp.net"} placement={"top"}>
               <Tag
                 size={"lg"}
-                key={"nim"}
+                key={"dotnet"}
                 variant={"subtle"}
                 colorScheme={"blue"}
+                w={"fit-content"}
               >
-                <TagLeftIcon boxSize={"20px"} as={SiNim} />
-                <TagLabel>nim</TagLabel>
+                <TagLeftIcon boxSize={"20px"} as={DiDotnet} />
+                <TagLabel>dotnet</TagLabel>
               </Tag>
-              <Tag
-                  size={"lg"}
-                  key={"git"}
-                  variant={"subtle"}
-                  colorScheme={"blue"}
-              >
-                <TagLeftIcon boxSize={"20px"} as={DiGit} />
-                <TagLabel>git</TagLabel>
-              </Tag>
-            </HStack>
-            <VStack>
-              <HStack>
-                <Tooltip hasArrow label={"fedora, arch, ubuntu"} placement={"bottom"}>
-                  <Tag
-                      size={"lg"}
-                      key={"linux"}
-                      variant={"subtle"}
-                      colorScheme={"blue"}
-                  >
-                    <TagLeftIcon boxSize={"20px"} as={DiLinux} />
-                    <TagLabel>linux</TagLabel>
-                  </Tag>
-                </Tooltip>
-                <Tag
-                  size={"lg"}
-                  key={"bash"}
-                  variant={"subtle"}
-                  colorScheme={"blue"}
-                >
-                  <TagLeftIcon boxSize={"20px"} as={SiGnubash} />
-                  <TagLabel>bash</TagLabel>
-                </Tag>
+            </Tooltip>
 
-                <Tooltip hasArrow label={"docker compose"} placement={"bottom"}>
-                  <Tag
-                    size={"lg"}
-                    key={"docker"}
-                    variant={"subtle"}
-                    colorScheme={"blue"}
-                  >
-                    <TagLeftIcon boxSize={"20px"} as={SiDocker} />
-                    <TagLabel>docker</TagLabel>
-                  </Tag>
-                </Tooltip>
-                <Tooltip hasArrow label={"+ pl/pgsql"} placement={"bottom"}>
-                  <Tag
-                      size={"lg"}
-                      key={"postgres"}
-                      variant={"subtle"}
-                      colorScheme={"blue"}
-                  >
-                    <TagLeftIcon boxSize={"20px"} as={DiPostgresql} />
-                    <TagLabel>postgresql</TagLabel>
-                  </Tag>
-                </Tooltip>
-              </HStack>
-            </VStack>
-          </VStack>
+            <Tooltip hasArrow label={"fastapi, tortoise"} placement={"top"}>
+              <Tag
+                size={"lg"}
+                key={"python"}
+                variant={"subtle"}
+                colorScheme={"blue"}
+                w={"fit-content"}
+              >
+                <TagLeftIcon boxSize={"20px"} as={DiPython} />
+                <TagLabel>python</TagLabel>
+              </Tag>
+            </Tooltip>
+
+            <Tooltip hasArrow label={"next.js, react"} placement={"top"}>
+              <Tag
+                size={"lg"}
+                key={"typescript"}
+                variant={"subtle"}
+                colorScheme={"blue"}
+                w={"fit-content"}
+              >
+                <TagLeftIcon boxSize={"20px"} as={SiTypescript} />
+                <TagLabel>typescript</TagLabel>
+              </Tag>
+            </Tooltip>
+            <Tag
+              size={"lg"}
+              key={"nim"}
+              variant={"subtle"}
+              colorScheme={"blue"}
+              w={"fit-content"}
+            >
+              <TagLeftIcon boxSize={"20px"} as={SiNim} />
+              <TagLabel>nim</TagLabel>
+            </Tag>
+            <Tag
+              size={"lg"}
+              key={"git"}
+              variant={"subtle"}
+              colorScheme={"blue"}
+              w={"fit-content"}
+            >
+              <TagLeftIcon boxSize={"20px"} as={DiGit} />
+              <TagLabel>git</TagLabel>
+            </Tag>
+            <Tooltip
+              hasArrow
+              label={"fedora, arch, ubuntu"}
+              placement={"bottom"}
+            >
+              <Tag
+                size={"lg"}
+                key={"linux"}
+                variant={"subtle"}
+                colorScheme={"blue"}
+                w={"fit-content"}
+              >
+                <TagLeftIcon boxSize={"20px"} as={DiLinux} />
+                <TagLabel>linux</TagLabel>
+              </Tag>
+            </Tooltip>
+            <Tag
+              size={"lg"}
+              key={"bash"}
+              variant={"subtle"}
+              colorScheme={"blue"}
+              w={"fit-content"}
+            >
+              <TagLeftIcon boxSize={"20px"} as={SiGnubash} />
+              <TagLabel>bash</TagLabel>
+            </Tag>
+
+            <Tooltip hasArrow label={"docker compose"} placement={"bottom"}>
+              <Tag
+                size={"lg"}
+                key={"docker"}
+                variant={"subtle"}
+                colorScheme={"blue"}
+                w={"fit-content"}
+              >
+                <TagLeftIcon boxSize={"20px"} as={SiDocker} />
+                <TagLabel>docker</TagLabel>
+              </Tag>
+            </Tooltip>
+            <Tooltip hasArrow label={"+ pl/pgsql"} placement={"bottom"}>
+              <Tag
+                size={"lg"}
+                key={"postgres"}
+                variant={"subtle"}
+                colorScheme={"blue"}
+                w={"fit-content"}
+              >
+                <TagLeftIcon boxSize={"20px"} as={DiPostgresql} />
+                <TagLabel>postgresql</TagLabel>
+              </Tag>
+            </Tooltip>
+          </SimpleGrid>
         </Section>
 
         <Section delay={0.4}>
