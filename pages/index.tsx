@@ -24,7 +24,7 @@ import Layout from "../components/layouts/article";
 import {IoLogoGithub, IoLogoVk} from "react-icons/io5";
 import {BsTelegram} from "react-icons/bs";
 import {DiDotnet, DiGit, DiLinux, DiPostgresql, DiPython} from "react-icons/di";
-import {SiDocker, SiGnubash, SiNim} from "react-icons/si";
+import {SiDocker, SiGnubash, SiNim, SiTypescript} from "react-icons/si";
 import React from "react";
 
 const Page = () => {
@@ -109,6 +109,18 @@ const Page = () => {
                 >
                   <TagLeftIcon boxSize={"20px"} as={DiPython} />
                   <TagLabel>python</TagLabel>
+                </Tag>
+              </Tooltip>
+
+              <Tooltip hasArrow label={"next.js, react"} placement={"top"}>
+                <Tag
+                  size={"lg"}
+                  key={"typescript"}
+                  variant={"subtle"}
+                  colorScheme={"blue"}
+                >
+                  <TagLeftIcon boxSize={"20px"} as={SiTypescript} />
+                  <TagLabel>typescript</TagLabel>
                 </Tag>
               </Tooltip>
               <Tag
