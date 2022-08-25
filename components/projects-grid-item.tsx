@@ -1,6 +1,13 @@
-import {Box, Image, LinkBox, LinkOverlay, Spinner, Text} from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  LinkBox,
+  LinkOverlay,
+  Spinner,
+  Text
+} from "@chakra-ui/react";
 import NextLink from "next/link";
-import {Meta} from "./project/meta";
+import { Meta } from "./project/meta";
 import React from "react";
 
 type Props = {
@@ -36,7 +43,7 @@ export const ProjectsGridItem = ({
             className={"grid-item-thumbnail"}
             loading={"lazy"}
             fallback={<Spinner />}
-            width={200}
+            width={320}
             height={200}
           />
           <LinkOverlay href={`/project/${id}`}>

@@ -1,10 +1,16 @@
 import Layout from "../../components/layouts/article";
-import {Container, Link, List, ListItem, useColorModeValue} from "@chakra-ui/react";
-import {Project} from "../../components/project/project";
+import {
+  Container,
+  Link,
+  List,
+  ListItem,
+  useColorModeValue
+} from "@chakra-ui/react";
+import { Project } from "../../components/project/project";
 import Paragraph from "../../components/paragraph";
-import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {ProjectImage} from "../../components/project/project-image";
-import {Meta} from "../../components/project/meta";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { ProjectImage } from "../../components/project/project-image";
+import { Meta } from "../../components/project/meta";
 import React from "react";
 
 const Choco = () => {

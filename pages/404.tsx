@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import {Box, Button, Divider, Heading, Text} from "@chakra-ui/react";
+import { Box, Button, Divider, Heading, Text } from "@chakra-ui/react";
 import Layout from "../components/layouts/article";
 import React from "react";
 import Section from "../components/section";

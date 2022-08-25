@@ -1,8 +1,14 @@
 import Layout from "../components/layouts/article";
-import {Button, Container, Heading, LinkOverlay, SimpleGrid} from "@chakra-ui/react";
-import {GridItem} from "../components/grid-item";
+import {
+  Button,
+  Container,
+  Heading,
+  LinkOverlay,
+  SimpleGrid
+} from "@chakra-ui/react";
+import { GridItem } from "../components/grid-item";
 import React from "react";
-import {ChevronRightIcon} from "@chakra-ui/icons";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const Posts = () => {
   return (

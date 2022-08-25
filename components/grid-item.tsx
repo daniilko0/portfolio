@@ -1,4 +1,11 @@
-import {Box, Image, LinkBox, LinkOverlay, Spinner, Text} from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  LinkBox,
+  LinkOverlay,
+  Spinner,
+  Text
+} from "@chakra-ui/react";
 import React from "react";
 
 type Props = {

@@ -12,9 +12,9 @@ import {
   Stack,
   useColorModeValue
 } from "@chakra-ui/react";
-import {HamburgerIcon} from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
-import {LinkItem} from "./link-item";
+import { LinkItem } from "./link-item";
 import React from "react";
 import ChakraNextLink from "./chakra-next-link";
 

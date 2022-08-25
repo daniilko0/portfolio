@@ -1,7 +1,7 @@
-import {Container, Heading, SimpleGrid} from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import Section from "../components/section";
 import Layout from "../components/layouts/article";
-import {ProjectsGridItem} from "../components/projects-grid-item";
+import { ProjectsGridItem } from "../components/projects-grid-item";
 import React from "react";
 
 const Projects = () => {
@@ -45,12 +45,10 @@ const Projects = () => {
                 id={"cv"}
                 title={"Сайт-резюме"}
                 labels={["React", "Next.js", "Typescript"]}
-                thumbnails={
-                  [
-                    "/images/projects/cv/webp/common/thumbnail.webp",
-                    "/images/projects/cv/png/common/thumbnail.png"
-                  ]
-                }
+                thumbnails={[
+                  "/images/projects/cv/webp/common/thumbnail.webp",
+                  "/images/projects/cv/png/common/thumbnail.png"
+                ]}
               >
                 Этот сайт с резюме и перечнем реализованных проектов
               </ProjectsGridItem>
@@ -70,7 +68,10 @@ const Projects = () => {
                 id={"link-shortener"}
                 title={"Сокращатель ссылок"}
                 labels={["Typescript", "React", "Next.js", "Redis"]}
-                thumbnails={["/images/projects/ls/webp/common/thumbnail.webp", "/images/projects/ls/png/common/thumbnail.png"]}
+                thumbnails={[
+                  "/images/projects/ls/webp/common/thumbnail.webp",
+                  "/images/projects/ls/png/common/thumbnail.png"
+                ]}
               >
                 Простенький сервис для сокращения ссылок
               </ProjectsGridItem>

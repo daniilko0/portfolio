@@ -16,14 +16,20 @@ import {
 
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
-import {ChevronRightIcon, Icon} from "@chakra-ui/icons";
+import { ChevronRightIcon, Icon } from "@chakra-ui/icons";
 import NextLink from "next/link";
-import {BioSection, BioYear} from "../components/bio";
+import { BioSection, BioYear } from "../components/bio";
 import Layout from "../components/layouts/article";
-import {IoLogoGithub, IoLogoVk} from "react-icons/io5";
-import {BsTelegram} from "react-icons/bs";
-import {DiDotnet, DiGit, DiLinux, DiPostgresql, DiPython} from "react-icons/di";
-import {SiDocker, SiGnubash, SiNim, SiTypescript} from "react-icons/si";
+import { IoLogoGithub, IoLogoVk } from "react-icons/io5";
+import { BsTelegram } from "react-icons/bs";
+import {
+  DiDotnet,
+  DiGit,
+  DiLinux,
+  DiPostgresql,
+  DiPython
+} from "react-icons/di";
+import { SiDocker, SiGnubash, SiNim, SiTypescript } from "react-icons/si";
 import React from "react";
 
 const Page = () => {

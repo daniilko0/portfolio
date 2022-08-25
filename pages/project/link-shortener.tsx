@@ -1,10 +1,10 @@
 import Layout from "../../components/layouts/article";
-import {Container, Link, List, ListItem} from "@chakra-ui/react";
-import {Project} from "../../components/project/project";
-import {ExternalLinkIcon} from "@chakra-ui/icons";
+import { Container, Link, List, ListItem } from "@chakra-ui/react";
+import { Project } from "../../components/project/project";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Paragraph from "../../components/paragraph";
-import {ProjectImage} from "../../components/project/project-image";
-import {Meta} from "../../components/project/meta";
+import { ProjectImage } from "../../components/project/project-image";
+import { Meta } from "../../components/project/meta";
 import React from "react";
 
 const LinkShortener = () => (
