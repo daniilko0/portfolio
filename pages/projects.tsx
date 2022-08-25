@@ -1,4 +1,4 @@
-import {Container, Heading, SimpleGrid, useColorModeValue} from "@chakra-ui/react";
+import {Container, Heading, SimpleGrid} from "@chakra-ui/react";
 import Section from "../components/section";
 import Layout from "../components/layouts/article";
 import {ProjectsGridItem} from "../components/projects-grid-item";
@@ -33,8 +33,8 @@ const Projects = () => {
                   "Telegram API"
                 ]}
                 thumbnails={[
-                  "/images/projects/choco/webp/common/choco-logo.webp",
-                  "/images/projects/choco/jpg/common/choco-logo.jpg"
+                  "/images/projects/choco/webp/common/thumbnail.webp",
+                  "/images/projects/choco/png/common/thumbnail.png"
                 ]}
               >
                 Система работы с клиентами и остатками в интернет-магазине
@@ -45,16 +45,12 @@ const Projects = () => {
                 id={"cv"}
                 title={"Сайт-резюме"}
                 labels={["React", "Next.js", "Typescript"]}
-                thumbnails={useColorModeValue(
+                thumbnails={
                   [
-                    "/images/projects/cv/webp/light/cv-thumbnail.webp",
-                    "/images/projects/choco/png/light/cv-thumbnail.png"
-                  ],
-                  [
-                    "/images/projects/cv/webp/dark/cv-thumbnail.webp",
-                    "/images/projects/choco/png/dark/cv-thumbnail.png"
+                    "/images/projects/cv/webp/common/thumbnail.webp",
+                    "/images/projects/cv/png/common/thumbnail.png"
                   ]
-                )}
+                }
               >
                 Этот сайт с резюме и перечнем реализованных проектов
               </ProjectsGridItem>
@@ -74,7 +70,7 @@ const Projects = () => {
                 id={"link-shortener"}
                 title={"Сокращатель ссылок"}
                 labels={["Typescript", "React", "Next.js", "Redis"]}
-                // thumbnail={'/images/choco_manager_logo.jpg'}
+                thumbnails={["/images/projects/ls/webp/common/thumbnail.webp", "/images/projects/ls/png/common/thumbnail.png"]}
               >
                 Простенький сервис для сокращения ссылок
               </ProjectsGridItem>
