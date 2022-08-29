@@ -1,14 +1,8 @@
 import Layout from "../components/layouts/article";
-import {
-  Button,
-  Container,
-  Heading,
-  LinkOverlay,
-  SimpleGrid
-} from "@chakra-ui/react";
-import { GridItem } from "../components/grid-item";
+import {Button, Container, Heading, LinkOverlay, SimpleGrid} from "@chakra-ui/react";
+import {GridItem} from "../components/grid-item";
 import React from "react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
+import {ChevronRightIcon} from "@chakra-ui/icons";
 
 const Posts = () => {
   return (
@@ -18,6 +12,16 @@ const Posts = () => {
           Публикации
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <GridItem
+            title={"Как я возненавидел Java"}
+            href={"https://blog.dadyarri.ru/how-i-hated-java"}
+            thumbnails={[
+              "/images/posts/webp/why-i-hated-java.webp",
+              "/images/posts/png/why-i-hated-java.png"
+            ]}
+          >
+            Погружение в кроличью нору энтерпрайза
+          </GridItem>
           <GridItem
             title={"React"}
             href={"https://blog.dadyarri.ru/react"}
