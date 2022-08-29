@@ -53,16 +53,16 @@ const Projects = () => {
                 Этот сайт с резюме и перечнем реализованных проектов
               </ProjectsGridItem>
             </Section>
-            <Section>
-              <ProjectsGridItem
-                id={"todo"}
-                title={"To-Do CLI"}
-                labels={["Nim"]}
-                // thumbnail={'/images/choco_manager_logo.jpg'}
-              >
-                Менеджер задач в консоли
-              </ProjectsGridItem>
-            </Section>
+            {/*<Section>*/}
+            {/*  <ProjectsGridItem*/}
+            {/*    id={"todo"}*/}
+            {/*    title={"To-Do CLI"}*/}
+            {/*    labels={["Nim"]}*/}
+            {/*    // thumbnail={'/images/choco_manager_logo.jpg'}*/}
+            {/*  >*/}
+            {/*    Менеджер задач в консоли*/}
+            {/*  </ProjectsGridItem>*/}
+            {/*</Section>*/}
             <Section>
               <ProjectsGridItem
                 id={"link-shortener"}
