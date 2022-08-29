@@ -81,10 +81,10 @@ const Projects = () => {
                   id={"dotversion"}
                   title={"DotVersion"}
                   labels={["Nim"]}
-                  // thumbnails={[
-                  //   "/images/projects/ls/webp/common/thumbnail.webp",
-                  //   "/images/projects/ls/png/common/thumbnail.png"
-                  // ]}
+                  thumbnails={[
+                    "/images/projects/dotversion/webp/thumbnail.webp",
+                    "/images/projects/dotversion/png/thumbnail.png"
+                  ]}
               >
                 Консольное приложение для управления версией проектов на .NET
               </ProjectsGridItem>
@@ -101,6 +101,10 @@ const Projects = () => {
                 id={"star"}
                 title={"Student Archive"}
                 labels={["Java", "Spark framework", "JDBC", "PostgreSQL"]}
+                thumbnails={[
+                    "/images/projects/star/webp/thumbnail.webp",
+                    "/images/projects/star/png/thumbnail.png"
+                ]}
               >
                 Приложение для архивирования полезных учебных материалов
                 (лабораторные работы, методические материалы и пр.)
