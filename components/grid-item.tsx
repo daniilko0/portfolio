@@ -1,11 +1,4 @@
-import {
-  Box,
-  Image,
-  LinkBox,
-  LinkOverlay,
-  Spinner,
-  Text
-} from "@chakra-ui/react";
+import {Box, Image, LinkBox, LinkOverlay, Spinner, Text} from "@chakra-ui/react";
 import React from "react";
 
 type Props = {
@@ -27,8 +20,8 @@ export const GridItem = ({ children, title, href, thumbnails }: Props) => {
           className={"grid-item-thumbnail"}
           loading={"lazy"}
           fallback={<Spinner />}
-          width={300}
-          height={150}
+          width={320}
+          height={200}
         />
         <LinkOverlay href={href} target={"_blank"}>
           <Text mt={2}>{title}</Text>
