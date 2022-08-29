@@ -26,8 +26,8 @@ const Posts = () => {
             title={"React"}
             href={"https://blog.dadyarri.ru/react"}
             thumbnails={[
-              "/images/projects/cv/webp/dark/cv-thumbnail.webp",
-              "/images/projects/cv/png/dark/cv-thumbnail.png"
+              "/images/posts/webp/reactjs.webp",
+              "/images/posts/png/reactjs.png"
             ]}
           >
             Возвращение к современному фронтенду с неожиданным выводом
