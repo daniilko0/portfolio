@@ -56,8 +56,8 @@ const Posts = () => {
             title={"Control"}
             href={"https://blog.dadyarri.ru/control"}
             thumbnails={[
-              "/images/posts/webp/control-review.webp",
-              "/images/posts/jpg/control-review.jpg"
+              "/images/posts/webp/control.webp",
+              "/images/posts/png/control.png"
             ]}
           >
             Немного запоздалого мнения о Control (2019)
