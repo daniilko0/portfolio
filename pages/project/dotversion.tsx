@@ -27,8 +27,8 @@ const Dotversion = () => (
       </List>
       <ProjectImage
         srcs={[
-          "/images/projects/ls/webp/dark/ls-home-page.webp",
-          "/images/projects/ls/png/dark/ls-home-page.png"
+          "/images/projects/dotversion/webp/help-msg.webp",
+          "/images/projects/dotversion/png/help-msg.png"
         ]}
         alt={"dotversion help message"}
       />
