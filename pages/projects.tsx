@@ -1,7 +1,7 @@
-import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import {Container, Heading, SimpleGrid} from "@chakra-ui/react";
 import Section from "../components/section";
 import Layout from "../components/layouts/article";
-import { ProjectsGridItem } from "../components/projects-grid-item";
+import {ProjectsGridItem} from "../components/projects-grid-item";
 import React from "react";
 
 const Projects = () => {
@@ -74,6 +74,19 @@ const Projects = () => {
                 ]}
               >
                 Простенький сервис для сокращения ссылок
+              </ProjectsGridItem>
+            </Section>
+            <Section>
+              <ProjectsGridItem
+                  id={"dotversion"}
+                  title={"DotVersion"}
+                  labels={["Nim"]}
+                  // thumbnails={[
+                  //   "/images/projects/ls/webp/common/thumbnail.webp",
+                  //   "/images/projects/ls/png/common/thumbnail.png"
+                  // ]}
+              >
+                Консольное приложение для управления версией проектов на .NET
               </ProjectsGridItem>
             </Section>
           </SimpleGrid>
