@@ -1,5 +1,5 @@
-import { mode, StyleFunctionProps } from "@chakra-ui/theme-tools";
-import { extendTheme } from "@chakra-ui/react";
+import {mode, StyleFunctionProps} from "@chakra-ui/theme-tools";
+import {extendTheme} from "@chakra-ui/react";
 
 const theme = extendTheme({
   config: {
@@ -29,7 +29,7 @@ const theme = extendTheme({
           textDecorationColor: mode("#525252", "#ffffff")(props),
           textDecorationThickness: "4px",
           marginTop: "3px",
-          marginBottom: "10px",
+          marginBottom: "20px",
           color: mode("#202023", "#ffffff")(props)
         })
       }
