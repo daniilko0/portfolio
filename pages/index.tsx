@@ -16,20 +16,14 @@ import {
 
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
-import { ChevronRightIcon, Icon } from "@chakra-ui/icons";
+import {ChevronRightIcon, Icon} from "@chakra-ui/icons";
 import NextLink from "next/link";
-import { BioSection, BioYear } from "../components/bio";
+import {BioSection, BioYear} from "../components/bio";
 import Layout from "../components/layouts/article";
-import { IoLogoGithub, IoLogoVk } from "react-icons/io5";
-import { BsTelegram } from "react-icons/bs";
-import {
-  DiDotnet,
-  DiGit,
-  DiLinux,
-  DiPostgresql,
-  DiPython
-} from "react-icons/di";
-import { SiDocker, SiGnubash, SiNim, SiTypescript } from "react-icons/si";
+import {IoLogoGithub, IoLogoVk} from "react-icons/io5";
+import {BsTelegram} from "react-icons/bs";
+import {DiDotnet, DiGit, DiLinux, DiPostgresql, DiPython} from "react-icons/di";
+import {SiDocker, SiGnubash, SiNim, SiTypescript} from "react-icons/si";
 import React from "react";
 
 const Page = () => {
@@ -42,7 +36,7 @@ const Page = () => {
               <Heading as="h2" variant="page-title">
                 Даниил Голубев
               </Heading>
-              <p>Бэкенд-разработчик, фанат Jetbrains, Linux-энтузиаст</p>
+              <p>Фулстек-разработчик, фанат Jetbrains, Linux-энтузиаст</p>
             </Box>
             <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
               <Image
