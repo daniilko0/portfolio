@@ -15,25 +15,27 @@ type Props = {
 };
 
 const Layout = ({ children, title }: Props) => {
-  let t = `${title} - dadyarri`
-  return <motion.article
+  let t = `${title} - dadyarri`;
+  return (
+    <motion.article
       initial={"hidden"}
       animate={"enter"}
       exit={"exit"}
       variants={variants}
-      transition={{duration: 0.4, type: "easeInOut"}}
-      style={{position: "relative"}}
-  >
-    <>
-      {title && (
+      transition={{ duration: 0.4, type: "easeInOut" }}
+      style={{ position: "relative" }}
+    >
+      <>
+        {title && (
           <Head>
             <title>{t}</title>
           </Head>
-      )}
-      {children}
-      <GridItemStyle/>
-    </>
-  </motion.article>
+        )}
+        {children}
+        <GridItemStyle />
+      </>
+    </motion.article>
+  );
 };
 
 export default Layout;
