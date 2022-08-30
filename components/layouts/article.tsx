@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import Head from "next/head";
 import React from "react";
-import { GridItemStyle } from "../grid-item-style";
+import {GridItemStyle} from "../grid-item-style";
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
@@ -14,25 +14,26 @@ type Props = {
   title: string;
 };
 
-const Layout = ({ children, title }: Props) => (
-  <motion.article
-    initial={"hidden"}
-    animate={"enter"}
-    exit={"exit"}
-    variants={variants}
-    transition={{ duration: 0.4, type: "easeInOut" }}
-    style={{ position: "relative" }}
+const Layout = ({ children, title }: Props) => {
+  let t = `${title} - dadyarri`
+  return <motion.article
+      initial={"hidden"}
+      animate={"enter"}
+      exit={"exit"}
+      variants={variants}
+      transition={{duration: 0.4, type: "easeInOut"}}
+      style={{position: "relative"}}
   >
     <>
       {title && (
-        <Head>
-          <title>{title} - dadyarri</title>
-        </Head>
+          <Head>
+            <title>{t}</title>
+          </Head>
       )}
       {children}
-      <GridItemStyle />
+      <GridItemStyle/>
     </>
   </motion.article>
-);
+};
 
 export default Layout;
