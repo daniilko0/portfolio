@@ -17,8 +17,7 @@ const Projects = () => {
             Личные
           </Heading>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
-            <Section>
-              <ProjectsGridItem
+            <ProjectsGridItem
                 id={"choco"}
                 title={"ChocoManager"}
                 labels={[
@@ -36,12 +35,10 @@ const Projects = () => {
                   "/images/projects/choco/webp/common/thumbnail.webp",
                   "/images/projects/choco/png/common/thumbnail.png"
                 ]}
-              >
-                Система работы с клиентами и остатками в интернет-магазине
-              </ProjectsGridItem>
-            </Section>
-            <Section>
-              <ProjectsGridItem
+            >
+              Система работы с клиентами и остатками в интернет-магазине
+            </ProjectsGridItem>
+            <ProjectsGridItem
                 id={"cv"}
                 title={"Сайт-резюме"}
                 labels={["React", "Next.js", "Typescript"]}
@@ -49,10 +46,9 @@ const Projects = () => {
                   "/images/projects/cv/webp/common/thumbnail.webp",
                   "/images/projects/cv/png/common/thumbnail.png"
                 ]}
-              >
-                Этот сайт с резюме и перечнем реализованных проектов
-              </ProjectsGridItem>
-            </Section>
+            >
+              Этот сайт с резюме и перечнем реализованных проектов
+            </ProjectsGridItem>
             {/*<Section>*/}
             {/*  <ProjectsGridItem*/}
             {/*    id={"todo"}*/}
@@ -63,8 +59,7 @@ const Projects = () => {
             {/*    Менеджер задач в консоли*/}
             {/*  </ProjectsGridItem>*/}
             {/*</Section>*/}
-            <Section>
-              <ProjectsGridItem
+            <ProjectsGridItem
                 id={"link-shortener"}
                 title={"Сокращатель ссылок"}
                 labels={["Typescript", "React", "Next.js", "Redis"]}
@@ -72,23 +67,20 @@ const Projects = () => {
                   "/images/projects/ls/webp/common/thumbnail.webp",
                   "/images/projects/ls/png/common/thumbnail.png"
                 ]}
-              >
-                Простенький сервис для сокращения ссылок
-              </ProjectsGridItem>
-            </Section>
-            <Section>
-              <ProjectsGridItem
-                  id={"dotversion"}
-                  title={"DotVersion"}
-                  labels={["Nim"]}
-                  thumbnails={[
-                    "/images/projects/dotversion/webp/thumbnail.webp",
-                    "/images/projects/dotversion/png/thumbnail.png"
-                  ]}
-              >
-                Консольное приложение для управления версией проектов на .NET
-              </ProjectsGridItem>
-            </Section>
+            >
+              Простенький сервис для сокращения ссылок
+            </ProjectsGridItem>
+            <ProjectsGridItem
+                id={"dotversion"}
+                title={"DotVersion"}
+                labels={["Nim"]}
+                thumbnails={[
+                  "/images/projects/dotversion/webp/thumbnail.webp",
+                  "/images/projects/dotversion/png/thumbnail.png"
+                ]}
+            >
+              Консольное приложение для управления версией проектов на .NET
+            </ProjectsGridItem>
           </SimpleGrid>
         </Section>
         <Section>
@@ -96,20 +88,18 @@ const Projects = () => {
             Работа в команде
           </Heading>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
-            <Section>
-              <ProjectsGridItem
+            <ProjectsGridItem
                 id={"star"}
                 title={"Student Archive"}
                 labels={["Java", "Spark framework", "JDBC", "PostgreSQL"]}
                 thumbnails={[
-                    "/images/projects/star/webp/thumbnail.webp",
-                    "/images/projects/star/png/thumbnail.png"
+                  "/images/projects/star/webp/thumbnail.webp",
+                  "/images/projects/star/png/thumbnail.png"
                 ]}
-              >
-                Приложение для архивирования полезных учебных материалов
-                (лабораторные работы, методические материалы и пр.)
-              </ProjectsGridItem>
-            </Section>
+            >
+              Приложение для архивирования полезных учебных материалов
+              (лабораторные работы, методические материалы и пр.)
+            </ProjectsGridItem>
           </SimpleGrid>
         </Section>
       </Container>
