@@ -8,7 +8,7 @@ type Props = {
   thumbnails: [string, string];
 };
 
-export const GridItem = ({ children, title, href, thumbnails }: Props) => {
+export const PostsGridItem = ({ children, title, href, thumbnails }: Props) => {
   return (
     // @ts-ignore 2322
     <Box w={"100%"} align={"center"}>

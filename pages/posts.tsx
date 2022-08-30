@@ -1,6 +1,6 @@
 import Layout from "../components/layouts/article";
 import {Button, Container, Heading, LinkOverlay, SimpleGrid} from "@chakra-ui/react";
-import {GridItem} from "../components/grid-item";
+import {PostsGridItem} from "../components/posts-grid-item";
 import React from "react";
 import {ChevronRightIcon} from "@chakra-ui/icons";
 
@@ -12,7 +12,7 @@ const Posts = () => {
           Публикации
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <GridItem
+          <PostsGridItem
             title={"Как я возненавидел Java"}
             href={"https://blog.dadyarri.ru/how-i-hated-java"}
             thumbnails={[
@@ -21,8 +21,8 @@ const Posts = () => {
             ]}
           >
             Погружение в кроличью нору энтерпрайза
-          </GridItem>
-          <GridItem
+          </PostsGridItem>
+          <PostsGridItem
             title={"React"}
             href={"https://blog.dadyarri.ru/react"}
             thumbnails={[
@@ -31,8 +31,8 @@ const Posts = () => {
             ]}
           >
             Возвращение к современному фронтенду с неожиданным выводом
-          </GridItem>
-          <GridItem
+          </PostsGridItem>
+          <PostsGridItem
             title={"Nim"}
             href={"https://blog.dadyarri.ru/nim"}
             thumbnails={[
@@ -41,8 +41,8 @@ const Posts = () => {
             ]}
           >
             Моя история знакомства с Nim
-          </GridItem>
-          <GridItem
+          </PostsGridItem>
+          <PostsGridItem
             title={"Мои настройки Linux"}
             href={"https://blog.dadyarri.ru/dotfiles"}
             thumbnails={[
@@ -51,8 +51,8 @@ const Posts = () => {
             ]}
           >
             Снова пересобрал свои настройки линукса
-          </GridItem>
-          <GridItem
+          </PostsGridItem>
+          <PostsGridItem
             title={"Control"}
             href={"https://blog.dadyarri.ru/control"}
             thumbnails={[
@@ -61,8 +61,8 @@ const Posts = () => {
             ]}
           >
             Немного запоздалого мнения о Control (2019)
-          </GridItem>
-          <GridItem
+          </PostsGridItem>
+          <PostsGridItem
             title={"Второй мозг. Reinvented edition"}
             href={"https://blog.dadyarri.ru/second-mind-ed2"}
             thumbnails={[
@@ -71,7 +71,7 @@ const Posts = () => {
             ]}
           >
             Как я переделал свой воркспейс в Notion
-          </GridItem>
+          </PostsGridItem>
         </SimpleGrid>
         <Button rightIcon={<ChevronRightIcon />} colorScheme={"blue"} my={3}>
           Все публикации
