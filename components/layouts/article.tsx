@@ -15,7 +15,7 @@ type Props = {
 };
 
 const Layout = ({ children, title }: Props) => {
-  let t = `${title} - dadyarri`;
+  const t = `${title} - dadyarri`;
   return (
     <motion.article
       initial={"hidden"}
