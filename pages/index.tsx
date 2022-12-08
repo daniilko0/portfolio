@@ -36,7 +36,7 @@ const Page = () => {
               <Heading as="h2" variant="page-title">
                 Даниил Голубев
               </Heading>
-              <p>Фулстек-разработчик, фанат Jetbrains, Linux-энтузиаст</p>
+              <p>Бэкенд-разработчик, фанат Jetbrains, Linux-энтузиаст</p>
             </Box>
             <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
               <Image
