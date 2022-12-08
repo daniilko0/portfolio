@@ -15,7 +15,7 @@ const Main = ({ children, router }: Props) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <meta name="description" content="Даниил Голубев - Главная" />
+        <meta name="description" content="Даниил Голубев" />
         <title>Даниил Голубев - Главная</title>
       </Head>
 
