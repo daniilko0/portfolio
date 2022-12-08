@@ -28,7 +28,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <Layout title={"Главная"}>
+    <Layout overrideTitle={"Даниил Голубев"}>
       <Container my={5}>
         <Section delay={0}>
           <Box display={{ md: "flex" }}>
