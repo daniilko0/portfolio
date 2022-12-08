@@ -68,6 +68,17 @@ const Page = () => {
             IT-курсов в академии &quot;top&quot;
           </BioSection>
         </Section>
+        <Section delay={0.1}>
+          <Heading variant={"sectionTitle"} as={"h3"}>
+            Дополнительное образование
+          </Heading>
+          <BioSection>
+            <BioYear>ноя 2022</BioYear>&quot;Навигатор инноватора&quot; от университета Сколково
+          </BioSection>
+          <BioSection>
+            <BioYear>сен &ndash; дек 2022</BioYear>Акселератор ВлГУ &quot;От идеи до бизнеса&quot;
+          </BioSection>
+        </Section>
 
         <Section delay={0.2}>
           <Heading variant={"sectionTitle"} as={"h3"}>
