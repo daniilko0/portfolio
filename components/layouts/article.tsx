@@ -11,11 +11,18 @@ const variants = {
 
 type Props = {
   children: React.ReactNode;
-  title: string;
+  title?: string;
+  overrideTitle?: string;
 };
 
-const Layout = ({ children, title }: Props) => {
-  const t = `${title} - dadyarri`;
+const Layout = ({ children, title, overrideTitle }: Props) => {
+  let tlt = "";
+  if (overrideTitle) {
+    tlt = overrideTitle;
+  } else if (title) {
+    tlt = `${title} - dadyarri`;
+  }
+
   return (
     <motion.article
       initial={"hidden"}
@@ -26,9 +33,9 @@ const Layout = ({ children, title }: Props) => {
       style={{ position: "relative" }}
     >
       <>
-        {title && (
+        {tlt && (
           <Head>
-            <title>{t}</title>
+            <title>{tlt}</title>
           </Head>
         )}
         {children}
