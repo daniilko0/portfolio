@@ -65,7 +65,7 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>июн &ndash; сен 2021</BioYear>Преподаватель детских
-            IT-курсов в академии &quot;top&quot;
+            IT-курсов в академии &laquo;top&raquo;
           </BioSection>
         </Section>
         <Section delay={0.2}>
@@ -73,10 +73,10 @@ const Page = () => {
             Дополнительное образование
           </Heading>
           <BioSection>
-            <BioYear>ноя 2022</BioYear>&quot;Навигатор инноватора&quot; от Открытого университета Сколково
+            <BioYear>ноя 2022</BioYear>&laquo;Навигатор инноватора&raquo; от Открытого университета Сколково
           </BioSection>
           <BioSection>
-            <BioYear>сен &ndash; дек 2022</BioYear>Акселератор ВлГУ &quot;От идеи до бизнеса&quot;
+            <BioYear>сен &ndash; дек 2022</BioYear>Акселератор ВлГУ &laquo;От идеи до бизнеса&raquo;
           </BioSection>
         </Section>
 
@@ -85,7 +85,7 @@ const Page = () => {
             Награды
           </Heading>
           <BioSection>
-            <BioYear>дек 2022</BioYear>Победитель студенческого форума &quot;От Идеи до Бизнеса&quot; (в составе команды проекта &laquo;Платформа дистанционного образования &quot;UNI&quot;&raquo;)
+            <BioYear>дек 2022</BioYear>Победитель студенческого форума &laquo;От Идеи до Бизнеса&raquo; (в составе команды проекта &laquo;Платформа дистанционного образования &quot;UNI&quot;&raquo;)
           </BioSection>
         </Section>
 
