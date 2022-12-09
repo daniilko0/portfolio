@@ -15,9 +15,7 @@ import {
 } from "@chakra-ui/react";
 
 import Section from "../components/section";
-import Paragraph from "../components/paragraph";
-import {ChevronRightIcon, Icon} from "@chakra-ui/icons";
-import NextLink from "next/link";
+import {Icon} from "@chakra-ui/icons";
 import {BioSection, BioYear} from "../components/bio";
 import Layout from "../components/layouts/article";
 import {IoLogoGithub, IoLogoVk} from "react-icons/io5";
@@ -64,6 +62,9 @@ const Page = () => {
             системы и технологии, бакалавр
           </BioSection>
           <BioSection>
+            <BioYear>июн 2022 &ndash; н. в.</BioYear>Технический директор &laquo;UNI&raquo;
+          </BioSection>
+          <BioSection>
             <BioYear>июн &ndash; сен 2021</BioYear>Преподаватель детских
             IT-курсов в академии &laquo;top&raquo;
           </BioSection>
@@ -90,18 +91,6 @@ const Page = () => {
         </Section>
 
         <Section delay={0.4}>
-          <Heading variant={"sectionTitle"} as={"h3"}>
-            Работа
-          </Heading>
-          <Paragraph>
-            Начинающий бэкенд-разработчик и тех-лид, изучаю .NET.
-          </Paragraph>
-          <Button rightIcon={<ChevronRightIcon />} colorScheme={"blue"} my={3}>
-            <NextLink href={"/projects"}>Проекты</NextLink>
-          </Button>
-        </Section>
-
-        <Section delay={0.5}>
           <Heading variant={"sectionTitle"} as={"h3"}>
             Навыки
           </Heading>
@@ -218,7 +207,7 @@ const Page = () => {
           </SimpleGrid>
         </Section>
 
-        <Section delay={0.6}>
+        <Section delay={0.5}>
           <Heading variant={"sectionTitle"} as={"h3"}>
             Я в интернете
           </Heading>
