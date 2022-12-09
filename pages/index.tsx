@@ -68,19 +68,28 @@ const Page = () => {
             IT-курсов в академии &quot;top&quot;
           </BioSection>
         </Section>
-        <Section delay={0.1}>
+        <Section delay={0.2}>
           <Heading variant={"sectionTitle"} as={"h3"}>
             Дополнительное образование
           </Heading>
           <BioSection>
-            <BioYear>ноя 2022</BioYear>&quot;Навигатор инноватора&quot; от университета Сколково
+            <BioYear>ноя 2022</BioYear>&quot;Навигатор инноватора&quot; от Открытого университета Сколково
           </BioSection>
           <BioSection>
             <BioYear>сен &ndash; дек 2022</BioYear>Акселератор ВлГУ &quot;От идеи до бизнеса&quot;
           </BioSection>
         </Section>
 
-        <Section delay={0.2}>
+        <Section delay={0.3}>
+          <Heading variant={"sectionTitle"} as={"h3"}>
+            Награды
+          </Heading>
+          <BioSection>
+            <BioYear>дек 2022</BioYear>Победитель студенческого форума &quot;От Идеи до Бизнеса&quot; (в составе команды проекта &laquo;Платформа дистанционного образования &quot;UNI&quot;&raquo;)
+          </BioSection>
+        </Section>
+
+        <Section delay={0.4}>
           <Heading variant={"sectionTitle"} as={"h3"}>
             Работа
           </Heading>
@@ -92,7 +101,7 @@ const Page = () => {
           </Button>
         </Section>
 
-        <Section delay={0.3}>
+        <Section delay={0.5}>
           <Heading variant={"sectionTitle"} as={"h3"}>
             Навыки
           </Heading>
@@ -209,7 +218,7 @@ const Page = () => {
           </SimpleGrid>
         </Section>
 
-        <Section delay={0.4}>
+        <Section delay={0.6}>
           <Heading variant={"sectionTitle"} as={"h3"}>
             Я в интернете
           </Heading>
