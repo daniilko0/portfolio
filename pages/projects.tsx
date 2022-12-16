@@ -49,38 +49,6 @@ const Projects = () => {
             >
               Этот сайт с резюме и перечнем реализованных проектов
             </ProjectsGridItem>
-            {/*<Section>*/}
-            {/*  <ProjectsGridItem*/}
-            {/*    id={"todo"}*/}
-            {/*    title={"To-Do CLI"}*/}
-            {/*    labels={["Nim"]}*/}
-            {/*    // thumbnail={'/images/choco_manager_logo.jpg'}*/}
-            {/*  >*/}
-            {/*    Менеджер задач в консоли*/}
-            {/*  </ProjectsGridItem>*/}
-            {/*</Section>*/}
-            <ProjectsGridItem
-              id={"link-shortener"}
-              title={"Сокращатель ссылок"}
-              labels={["Typescript", "React", "Next.js", "Redis"]}
-              thumbnails={[
-                "/images/projects/ls/webp/common/thumbnail.webp",
-                "/images/projects/ls/png/common/thumbnail.png"
-              ]}
-            >
-              Простенький сервис для сокращения ссылок
-            </ProjectsGridItem>
-            <ProjectsGridItem
-              id={"dotversion"}
-              title={"DotVersion"}
-              labels={["Nim"]}
-              thumbnails={[
-                "/images/projects/dotversion/webp/thumbnail.webp",
-                "/images/projects/dotversion/png/thumbnail.png"
-              ]}
-            >
-              Консольное приложение для управления версией проектов на .NET
-            </ProjectsGridItem>
           </SimpleGrid>
         </Section>
         <Section>
