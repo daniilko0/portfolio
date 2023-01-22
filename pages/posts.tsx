@@ -13,6 +13,15 @@ const Posts = () => {
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <PostsGridItem
+            title={"Windows для разработчика"}
+            href={"https://blog.dadyarri.ru/developer-windows"}
+            thumbnails={[
+              "/images/posts/webp/developer-windows.webp",
+              "/images/posts/png/developer-windows.png"
+            ]}
+          >
+            Погружение в кроличью нору энтерпрайза
+          </PostsGridItem><PostsGridItem
             title={"Как я возненавидел Java"}
             href={"https://blog.dadyarri.ru/how-i-hated-java"}
             thumbnails={[
