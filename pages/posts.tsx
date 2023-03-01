@@ -16,8 +16,8 @@ const Posts = () => {
                         title={"Подключение валидации к строго типизированной конфигурации в .NET 6+"}
                         href={"https://blog.dadyarri.ru/typed-config-dotnet-6"}
                         thumbnails={[
-                            "/images/posts/webp/developer-windows.webp",
-                            "/images/posts/png/developer-windows.png"
+                            "/images/posts/webp/dotnet-config.webp",
+                            "/images/posts/jpg/dotnet-config.jpg"
                         ]}
                     >
                         Перевод <Link
