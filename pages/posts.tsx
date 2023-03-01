@@ -32,7 +32,7 @@ const Posts = () => {
                             "/images/posts/png/developer-windows.png"
                         ]}
                     >
-                        Экспериментирую с Windows, как с основной системой для разработки
+                        Экспериментирую с Windows как с основной системой для разработки
                     </PostsGridItem><PostsGridItem
                     title={"Как я возненавидел Java"}
                     href={"https://blog.dadyarri.ru/how-i-hated-java"}
