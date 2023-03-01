@@ -31,7 +31,7 @@ const Projects = () => {
                                 "PostgreSQL",
                                 "VK API",
                                 "Telegram API",
-                                "Javascript",
+                                "Typescript",
                                 "React"
                             ]}
                             thumbnails={[
