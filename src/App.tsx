@@ -1,6 +1,7 @@
 import {Header} from "./blocks/header";
 import {Home} from "./blocks/home";
 import ReactFullpage from '@fullpage/react-fullpage';
+import {Skills} from "./blocks/skills";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
                     return (
                         <ReactFullpage.Wrapper>
                             <Home/>
+                            <Skills/>
                         </ReactFullpage.Wrapper>
                     );
                 }}
