@@ -1,7 +1,7 @@
-import {Container} from "../container";
-import {Heading} from "../heading";
-import {Menu} from "../menu";
-import {MenuItem} from "../menu-item";
+import {Container} from "../../components/container";
+import {Heading} from "../../components/heading";
+import {Menu} from "../../components/menu";
+import {MenuItem} from "../../components/menu-item";
 
 export const Header = () => {
     return <Container>
