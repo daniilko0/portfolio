@@ -4,13 +4,13 @@ import {Menu} from "../../components/menu";
 import {MenuItem} from "../../components/menu-item";
 
 export const Header = () => {
-    return <Container>
+    return <Container style={{position: "sticky", top: 0}}>
         <Heading variant={"h1"} style={{flexGrow: 1}}>dadyarri</Heading>
         <Menu>
             <MenuItem href={"#home"}>Главная</MenuItem>
-            <MenuItem href={"#"}>Навыки</MenuItem>
-            <MenuItem href={"#"}>Проекты</MenuItem>
-            <MenuItem href={"#"}>Публикации</MenuItem>
+            <MenuItem href={"#skills"}>Навыки</MenuItem>
+            <MenuItem href={"#projects"}>Проекты</MenuItem>
+            <MenuItem href={"#posts"}>Публикации</MenuItem>
         </Menu>
     </Container>
 }
