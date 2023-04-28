@@ -9,16 +9,16 @@ export const Header = () => {
         <Heading variant={"h1"} style={{flexGrow: 1}}>dadyarri</Heading>
         <Menu>
             <MenuItem>
-                <Link to={"home"} smooth={true}>Главная</Link>
+                <Link to={"home"} smooth>Главная</Link>
             </MenuItem>
             <MenuItem>
-                <Link to={"skills"} smooth={true}>Навыки</Link>
+                <Link to={"skills"} smooth>Навыки</Link>
             </MenuItem>
             <MenuItem>
-                <Link to={"projects"} smooth={true}>Проекты</Link>
+                <Link to={"projects"} smooth>Проекты</Link>
             </MenuItem>
             <MenuItem>
-                <Link to={"posts"} smooth={true}>Публикации</Link>
+                <Link to={"posts"} smooth>Публикации</Link>
             </MenuItem>
         </Menu>
     </Container>
