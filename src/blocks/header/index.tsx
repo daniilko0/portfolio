@@ -5,7 +5,7 @@ import {MenuItem} from "../../components/menu-item";
 
 export const Header = () => {
     return <Container>
-        <Heading style={{flexGrow: 1}}>dadyarri</Heading>
+        <Heading variant={"h1"} style={{flexGrow: 1}}>dadyarri</Heading>
         <Menu>
             <MenuItem href={"#"}>Главная</MenuItem>
             <MenuItem href={"#"}>Навыки</MenuItem>
