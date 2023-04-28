@@ -1,5 +1,5 @@
 import {Container} from "../container";
-import {Heading} from "../heading.ts";
+import {Heading} from "../heading";
 import {Menu} from "../menu";
 import {MenuItem} from "../menu-item";
 
