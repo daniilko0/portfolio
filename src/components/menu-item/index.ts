@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const MenuItem = styled.a(() => ({
+export const MenuItem = styled.span(() => ({
     fontFamily: ["Fira Code", "monospace"],
     fontSize: "24px",
     color: "black",
