@@ -5,5 +5,7 @@ export const MenuItem = styled.a(() => ({
     fontSize: "24px",
     color: "black",
     textDecoration: "none",
-    padding: "0px 10px"
+    padding: "0px 10px",
+    userSelect: "none",
+    cursor: "pointer"
 }))
