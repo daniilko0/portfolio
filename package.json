@@ -13,7 +13,6 @@
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
     "@fontsource/fira-code": "^4.5.13",
-    "@fullpage/react-fullpage": "^0.1.39",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
