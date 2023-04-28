@@ -4,6 +4,7 @@ import {CardImage} from "../card-image";
 import {Heading} from "../heading";
 import {Text} from "../text";
 import styled from "@emotion/styled";
+import {CardLink} from "../card-link";
 
 interface CardProps {
     data: Project
@@ -29,6 +30,8 @@ export const Card: FC<CardProps> = ({data}) => {
         <CardBody>
             <Heading variant={"h1"}>{data.name}</Heading>
             {data.description.map((paragraph, index) => <Text key={index}>{paragraph}</Text>)}
+            <Heading variant={"h2"}>Ссылки</Heading>
+            {data.links.map((link, index) => <CardLink href={link.url} key={index}>{link.name}</CardLink>)}
         </CardBody>
     </div>
 }
