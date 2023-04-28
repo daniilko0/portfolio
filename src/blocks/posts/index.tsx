@@ -1,8 +1,11 @@
 import {Heading} from "../../components/heading";
 import {Block} from "../../components/block";
+import {Element} from "react-scroll";
 
 export const Posts = () => {
-    return <Block id={"posts"}>
-        <Heading variant={"h1"}>Публикации</Heading>
-    </Block>
+    return <Element name={"posts"}>
+        <Block>
+            <Heading variant={"h1"}>Публикации</Heading>
+        </Block>
+    </Element>
 }
