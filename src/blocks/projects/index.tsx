@@ -8,7 +8,7 @@ export const Projects = () => {
     return <Element name={"projects"}>
         <Block>
             <Heading variant={"h1"}>Проекты</Heading>
-            {projects.map(project  => <Card data={project}/>)}
+            {projects.map((project, index) => <Card data={project} key={index}/>)}
         </Block>
     </Element>
 }
