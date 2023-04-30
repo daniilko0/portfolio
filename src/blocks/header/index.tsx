@@ -5,7 +5,7 @@ import {MenuItem} from "../../components/menu-item";
 import {Link} from "react-scroll";
 
 export const Header = () => {
-    return <Container style={{position: "sticky", top: 0}}>
+    return <Container style={{position: "sticky", top: 0, backdropFilter: "blur(3px)"}}>
         <Heading variant={"h1"} style={{flexGrow: 1}}>dadyarri</Heading>
         <Menu>
             <MenuItem>
