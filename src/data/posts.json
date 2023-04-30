@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Подключение валидации к строго типизированной конфигурации в .NET 6+",
+    "thumbnail": "/posts/typed-config-dotnet/thumbnail.jpg",
+    "description": ["Перевод статьи Эндрю Лока про настройку механизма валидации конфигурации в .NET-приложениях"],
+    "links": [
+      {
+        "name": "Ссылка на пост",
+        "url": "https://blog.dadyarri.ru/typed-config-dotnet-6"
+      },
+      {
+        "name": "Оригинальная статья",
+        "url": "https://andrewlock.net/adding-validation-to-strongly-typed-configuration-objects-in-dotnet-6/"
+      }
+    ]
+  },
+  {
+    "name": "Как я возненавидел Java",
+    "thumbnail": "/posts/how-i-hated-java/thumbnail.png",
+    "description": ["Погружение в кроличью нору энтерпрайза"],
+    "links": [
+      {
+        "name": "Ссылка на пост",
+        "url": "https://blog.dadyarri.ru/how-i-hated-java"
+      }
+    ]
+  }
+]

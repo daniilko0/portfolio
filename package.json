@@ -1,45 +1,37 @@
 {
-  "name": "@dadyarri/portfolio",
-  "version": "1.0.0",
-  "description": "My new portofolio written in React",
-  "repository": "https://github.com/dadyarri/dadyarri.github.io",
-  "author": "Daniil Golubev <dadyarri@gmail.com>",
-  "license": "MIT",
-  "private": false,
+  "name": "portfolio-new",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.2",
-    "@chakra-ui/react": "^2.2.1",
-    "@chakra-ui/theme-tools": "^2.0.5",
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
-    "@types/jest": "^28.1.6",
-    "@types/node": "^18.6.3",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "framer-motion": "^6.3.16",
-    "next": "^12.2.0",
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@fontsource/fira-code": "^4.5.13",
+    "framer-motion": "^10.12.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
-    "typescript": "^4.7.4"
+    "react-icons": "^4.8.0",
+    "react-scroll": "^1.8.9",
+    "react-tooltip": "^5.11.1",
+    "react-type-animation": "^3.0.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.32.0",
-    "@typescript-eslint/parser": "^5.32.0",
-    "eslint": "^8.21.0",
-    "eslint-config-next": "^12.2.0",
-    "prettier": "^2.7.1"
-  },
-  "scripts": {
-    "dev": "next dev -H 0.0.0.0",
-    "build": "next build",
-    "format": "prettier --write .",
-    "lint": "next lint"
-  },
-  "browserslist": [
-    ">0.01%",
-    "not ie 11",
-    "not op_mini all",
-    "firefox 95"
-  ]
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-scroll": "^1.8.6",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  }
 }
