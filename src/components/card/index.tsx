@@ -26,7 +26,9 @@ export const Card: FC<CardProps> = ({data}) => {
         borderRadius: 10,
         margin: "20px"
     }}>
-        <CardImage src={data.thumbnail} style={{marginRight: "20px"}}/>
+        <div style={{width: 320, height: 200, marginRight: "20px"}}>
+            <CardImage src={data.thumbnail}/>
+        </div>
         <CardBody>
             <Heading variant={"h1"}>{data.name}</Heading>
             {data.description.map((paragraph, index) => <Text key={index}>{paragraph}</Text>)}
