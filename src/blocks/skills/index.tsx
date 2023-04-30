@@ -17,7 +17,7 @@ export const Skills = () => {
                             {skill.icon}
                         </a>
                     </SocialLink>
-                    <Tooltip id={skill.id}/>
+                    <Tooltip id={skill.id} style={{fontFamily: "Fira Code"}}/>
                 </>)}
             </Container>
         </Block>
