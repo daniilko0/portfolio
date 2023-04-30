@@ -33,7 +33,7 @@ export const Card: FC<CardProps> = ({data}) => {
             <Heading variant={"h1"}>{data.name}</Heading>
             {data.description.map((paragraph, index) => <Text key={index}>{paragraph}</Text>)}
             <Heading variant={"h2"}>Ссылки</Heading>
-            {data.links.map((link, index) => <CardLink href={link.url} key={index}>{link.name}</CardLink>)}
+            {data.links.map((link, index) => <CardLink href={link.url} target={"_blank"} key={index}>{link.name}</CardLink>)}
         </CardBody>
     </div>
 }
